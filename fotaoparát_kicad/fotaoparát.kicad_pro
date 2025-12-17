@@ -462,10 +462,12 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "stlib"
+      "stlib",
+      "rnd_shit_co_nema_symboly"
     ],
     "pinned_symbol_libs": [
-      "st_lib"
+      "st_lib",
+      "rnd_shit_co_nema_symboly"
     ]
   },
   "meta": {
