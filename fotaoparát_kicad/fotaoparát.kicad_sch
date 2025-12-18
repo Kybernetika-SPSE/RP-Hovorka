@@ -6644,7 +6644,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_FFC-FPC:Amphenol_F32Q-1A7x1-11022_1x22-1MP_P0.5mm_Horizontal"
+		(property "Footprint" "rnd_shit_co_nema_symboly:Hirose_FH12-22S-0.5SH"
 			(at 312.42 185.42 0)
 			(effects
 				(font

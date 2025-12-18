@@ -1,4 +1,4 @@
-26848537658935953
+26850303702800983
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106695,6 +106695,13 @@ Varistor VF
 2
 rnd_shit_co_nema_symboly
 22pin_to_15pin_adapter_for_ESP32_P4
+
+
+0
+0
+0
+rnd_shit_co_nema_symboly
+Hirose_FH12-22S-0.5SH
 
 
 0
