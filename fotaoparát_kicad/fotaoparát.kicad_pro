@@ -1,17 +1,206 @@
-ewogICJib2FyZCI6IHsKICAgICIzZHZpZXdwb3J0cyI6IFtdLAogICAgImRl
-c2lnbl9zZXR0aW5ncyI6IHsKICAgICAgImRlZmF1bHRzIjogewogICAgICAg
-ICJhcHBseV9kZWZhdWx0c190b19mcF9maWVsZHMiOiBmYWxzZSwKICAgICAg
-ICAiYXBwbHlfZGVmYXVsdHNfdG9fZnBfc2hhcGVzIjogZmFsc2UsCiAgICAg
-ICAgImFwcGx5X2RlZmF1bHRzX3RvX2ZwX3RleHQiOiBmYWxzZSwKICAgICAg
-ICAiYm9hcmRfb3V0bGluZV9saW5lX3dpZHRoIjogMC4wNSwKICAgICAgICAi
-Y29wcGVyX2xpbmVfd2lkdGgiOiAwLjIsCiAgICAgICAgImNvcHBlcl90ZXh0
-X2l0YWxpYyI6IGZhbHNlLAogICAgICAgICJjb3BwZXJfdGV4dF9zaXplX2gi
-OiAxLjUsCiAgICAgICAgImNvcHBlcl90ZXh0X3NpemVfdiI6IDEuNSwKICAg
-ICAgICAiY29wcGVyX3RleHRfdGhpY2tuZXNzIjogMC4zLAogICAgICAgICJj
-b3BwZXJfdGV4dF91cHJpZ2h0IjogZmFsc2UsCiAgICAgICAgImNvdXJ0eWFy
-ZF9saW5lX3dpZHRoIjogMC4wNSwKICAgICAgICAiZGltZW5zaW9uX3ByZWNp
-c2lvbiI6IDQsCiAgICAgICAgImRpbWVuc2lvbl91bml0cyI6IDMsCiAgICAg
-ICAgImRpbWVuc2lvbnMiOiB7CiAgICAgICAgICAiYXJyb3dfbGVuZ3RoIjog
-MTI3MDAwMCwKICAgICAgICAgICJleHRlbnNpb25fb2Zmc2V0IjogNTAwMDAw
-LAogICAgICAgICAgImtlZXBfdGV4dF9hbGlnbmVkIjogdHJ1ZSwKICAgICAgICAgICJzdXBwcmVzc196ZXJvZXMiOiB0cnVlLAogICAgICAgICAgInRleHRfcG9zaXRpb24iOiAwLAogICAgICAgICAgInVuaXRzX2Zvcm1hdCI6IDAKICAgICAgICB9LAogICAgICAgICJmYWJfbGluZV93aWR0aCI6IDAuMSwKICAgICAgICAiZmFiX3RleHRfaXRhbGljIjogZmFsc2UsCiAgICAgICAgImZhYl90ZXh0X3NpemVfaCI6IDEuMCwKICAgICAgICAiZmFiX3RleHRfc2l6ZV92IjogMS4wLAogICAgICAgICJmYWJfdGV4dF90aGlja25lc3MiOiAwLjE1LAogICAgICAgICJmYWJfdGV4dF91cHJpZ2h0IjogZmFsc2UsCiAgICAgICAgIm90aGVyX2xpbmVfd2lkdGgiOiAwLjEsCiAgICAgICAgIm90aGVyX3RleHRfaXRhbGljIjogZmFsc2UsCiAgICAgICAgIm90aGVyX3RleHRfc2l6ZV9oIjogMS4wLAogICAgICAgICJvdGhlcl90ZXh0X3NpemVfdiI6IDEuMCwKICAgICAgICAib3RoZXJfdGV4dF90aGlja25lc3MiOiAwLjE1LAogICAgICAgICJvdGhlcl90ZXh0X3VwcmlnaHQiOiBmYWxzZSwKICAgICAgICAicGFkcyI6IHsKICAgICAgICAgICJkcmlsbCI6IDAuOCwKICAgICAgICAgICJoZWlnaHQiOiAxLjI3LAogICAgICAgICAgIndpZHRoIjogMi41NAogICAgICAgIH0sCiAgICAgICAgInNpbGtfbGluZV93aWR0aCI6IDAuMSwKICAgICAgICAic2lsa190ZXh0X2l0YWxpYyI6IGZhbHNlLAogICAgICAgICJzaWxrX3RleHRfc2l6ZV9oIjogMS4wLAogICAgICAgICJzaWxrX3RleHRfc2l6ZV92IjogMS4wLAogICAgICAgICJzaWxrX3RleHRfdGhpY2tuZXNzIjogMC4xLAogICAgICAgICJzaWxrX3RleHRfdXByaWdodCI6IGZhbHNlLAogICAgICAgICJ6b25lcyI6IHsKICAgICAgICAgICJtaW5fY2xlYXJhbmNlIjogMC41CiAgICAgICAgfQogICAgICB9LAogICAgICAiZGlmZl9wYWlyX2RpbWVuc2lvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgImdhcCI6IDAuMCwKICAgICAgICAgICJ2aWFfZ2FwIjogMC4wLAogICAgICAgICAgIndpZHRoIjogMC4wCiAgICAgICAgfQogICAgICBdLAogICAgICAiZHJjX2V4Y2x1c2lvbnMiOiBbXSwKICAgICAgIm1ldGEiOiB7CiAgICAgICAgInZlcnNpb24iOiAyCiAgICAgIH0sCiAgICAgICJydWxlX3NldmVyaXRpZXMiOiB7CiAgICAgICAgImFubnVsYXJfd2lkdGgiOiAiZXJyb3IiLAogICAgICAgICJjbGVhcmFuY2UiOiAiZXJyb3IiLAogICAgICAgICJjb25uZWN0aW9uX3dpZHRoIjogIndhcm5pbmciLAogICAgICAgICJjb3BwZXJfZWRnZV9jbGVhcmFuY2UiOiAiZXJyb3IiLAogICAgICAgICJjb3BwZXJfc2xpdmVyIjogIndhcm5pbmciLAogICAgICAgICJjb3VydHlhcmRzX292ZXJsYXAiOiAiZXJyb3IiLAogICAgICAgICJjcmVlcGFnZSI6ICJlcnJvciIsCiAgICAgICAgImRpZmZfcGFpcl9nYXBfb3V0X29mX3JhbmdlIjogImVycm9yIiwKICAgICAgICAiZGlmZl9wYWlyX3VuY291cGxlZF9sZW5ndGhfdG9vX2xvbmciOiAiZXJyb3IiLAogICAgICAgICJkcmlsbF9vdXRfb2ZfcmFuZ2UiOiAiZXJyb3IiLAogICAgICAgICJkdXBsaWNhdGVfZm9vdHByaW50cyI6ICJ3YXJuaW5nIiwKICAgICAgICAiZXh0cmFfZm9vdHByaW50IjogIndhcm5pbmciLAogICAgICAgICJmb290cHJpbnQiOiAiZXJyb3IiLAogICAgICAgICJmb290cHJpbnRfZmlsdGVyc19taXNtYXRjaCI6ICJpZ25vcmUiLAogICAgICAgICJmb290cHJpbnRfc3ltYm9sX21pc21hdGNoIjogIndhcm5pbmciLAogICAgICAgICJmb290cHJpbnRfdHlwZV9taXNtYXRjaCI6ICJpZ25vcmUiLAogICAgICAgICJob2xlX2NsZWFyYW5jZSI6ICJlcnJvciIsCiAgICAgICAgImhvbGVfdG9faG9sZSI6ICJ3YXJuaW5nIiwKICAgICAgICAiaG9sZXNfY29fbG9jYXRlZCI6ICJ3YXJuaW5nIiwKICAgICAgICAiaW52YWxpZF9vdXRsaW5lIjogImVycm9yIiwKICAgICAgICAiaXNvbGF0ZWRfY29wcGVyIjogIndhcm5pbmciLAogICAgICAgICJpdGVtX29uX2Rpc2FibGVkX2xheWVyIjogImVycm9yIiwKICAgICAgICAiaXRlbXNfbm90X2FsbG93ZWQiOiAiZXJyb3IiLAogICAgICAgICJsZW5ndGhfb3V0X29mX3JhbmdlIjogImVycm9yIiwKICAgICAgICAibGliX2Zvb3RwcmludF9pc3N1ZXMiOiAid2FybmluZyIsCiAgICAgICAgImxpYl9mb290cHJpbnRfbWlzbWF0Y2giOiAid2FybmluZyIsCiAgICAgICAgIm1hbGZvcm1lZF9jb3VydHlhcmQiOiAiZXJyb3IiLAogICAgICAgICJtaWNyb3ZpYV9kcmlsbF9vdXRfb2ZfcmFuZ2UiOiAiZXJyb3IiLAogICAgICAgICJtaXJyb3JlZF90ZXh0X29uX2Zyb250X2xheWVyIjogIndhcm5pbmciLAogICAgICAgICJtaXNzaW5nX2NvdXJ0eWFyZCI6ICJpZ25vcmUiLAogICAgICAgICJtaXNzaW5nX2Zvb3RwcmludCI6ICJ3YXJuaW5nIiwKICAgICAgICAibmV0X2NvbmZsaWN0IjogIndhcm5pbmciLAogICAgICAgICJub25taXJyb3JlZF90ZXh0X29uX2JhY2tfbGF5ZXIiOiAid2FybmluZyIsCiAgICAgICAgIm5wdGhfaW5zaWRlX2NvdXJ0eWFyZCI6ICJpZ25vcmUiLAogICAgICAgICJwYWRzdGFjayI6ICJ3YXJuaW5nIiwKICAgICAgICAicHRoX2luc2lkZV9jb3VydHlhcmQiOiAiaWdub3JlIiwKICAgICAgICAic2hvcnRpbmdfaXRlbXMiOiAiZXJyb3IiLAogICAgICAgICJzaWxrX2VkZ2VfY2xlYXJhbmNlIjogIndhcm5pbmciLAogICAgICAgICJzaWxrX292ZXJfY29wcGVyIjogIndhcm5pbmciLAogICAgICAgICJzaWxrX292ZXJsYXAiOiAid2FybmluZyIsCiAgICAgICAgInNrZXdfb3V0X29mX3JhbmdlIjogImVycm9yIiwKICAgICAgICAic29sZGVyX21hc2tfYnJpZGdlIjogImVycm9yIiwKICAgICAgICAic3RhcnZlZF90aGVybWFsIjogImVycm9yIiwKICAgICAgICAidGV4dF9oZWlnaHQiOiAid2FybmluZyIsCiAgICAgICAgInRleHRfb25fZWRnZV9jdXRzIjogImVycm9yIiwKICAgICAgICAidGV4dF90aGlja25lc3MiOiAid2FybmluZyIsCiAgICAgICAgInRocm91Z2hfaG9sZV9wYWRfd2l0aG91dF9ob2xlIjogImVycm9yIiwKICAgICAgICAidG9vX21hbnlfdmlhcyI6ICJlcnJvciIsCiAgICAgICAgInRyYWNrX2FuZ2xlIjogImVycm9yIiwKICAgICAgICAidHJhY2tfZGFuZ2xpbmciOiAid2FybmluZyIsCiAgICAgICAgInRyYWNrX3NlZ21lbnRfbGVuZ3RoIjogImVycm9yIiwKICAgICAgICAidHJhY2tfd2lkdGgiOiAiZXJyb3IiLAogICAgICAgICJ0cmFja3NfY3Jvc3NpbmciOiAiZXJyb3IiLAogICAgICAgICJ1bmNvbm5lY3RlZF9pdGVtcyI6ICJlcnJvciIsCiAgICAgICAgInVucmVzb2x2ZWRfdmFyaWFibGUiOiAiZXJyb3IiLAogICAgICAgICJ2aWFfZGFuZ2xpbmciOiAid2FybmluZyIsCiAgICAgICAgInpvbmVzX2ludGVyc2VjdCI6ICJlcnJvciIKICAgICAgfSwKICAgICAgInJ1bGVzIjogewogICAgICAgICJtYXhfZXJyb3IiOiAwLjAwMSwKICAgICAgICAibWluX2NsZWFyYW5jZSI6IDAuMCwKICAgICAgICAibWluX2Nvbm5lY3Rpb24iOiAwLjAsCiAgICAgICAgIm1pbl9jb3BwZXJfZWRnZV9jbGVhcmFuY2UiOiAwLjAsCiAgICAgICAgIm1pbl9ncm9vdmVfd2lkdGgiOiAwLjAsCiAgICAgICAgIm1pbl9ob2xlX2NsZWFyYW5jZSI6IDAuMCwKICAgICAgICAibWluX2hvbGVfdG9faG9sZSI6IDAuMCwKICAgICAgICAibWluX21pY3JvdmlhX2RpYW1ldGVyIjogMC4wLAogICAgICAgICJtaW5fbWljcm92aWFfZHJpbGwiOiAwLjAsCiAgICAgICAgIm1pbl9yZXNvbHZlZF9zcG9rZXMiOiAyLAogICAgICAgICJtaW5fc2lsa19jbGVhcmFuY2UiOiAwLjAsCiAgICAgICAgIm1pbl90ZXh0X2hlaWdodCI6IDAuOCwKICAgICAgICAibWluX3RleHRfdGhpY2tuZXNzIjogMC4wOCwKICAgICAgICAibWluX3Rocm91Z2hfaG9sZV9kaWFtZXRlciI6IDAuMDYsCiAgICAgICAgIm1pbl90cmFja193aWR0aCI6IDAuMCwKICAgICAgICAibWluX3ZpYV9hbm51bGFyX3dpZHRoIjogMC4wLAogICAgICAgICJtaW5fdmlhX2RpYW1ldGVyIjogMC4wLAogICAgICAgICJzb2xkZXJfbWFza190b19jb3BwZXJfY2xlYXJhbmNlIjogMC4wLAogICAgICAgICJ1c2VfaGVpZ2h0X2Zvcl9sZW5ndGhfY2FsY3MiOiB0cnVlCiAgICAgIH0sCiAgICAgICJ0ZWFyZHJvcF9vcHRpb25zIjogWwogICAgICAgIHsKICAgICAgICAgICJ0ZF9vbnB0aHBhZCI6IHRydWUsCiAgICAgICAgICAidGRfb25yb3VuZHNoYXBlc29ubHkiOiBmYWxzZSwKICAgICAgICAgICJ0ZF9vbnNtZHBhZCI6IHRydWUsCiAgICAgICAgICAidGRfb250cmFja2VuZCI6IGZhbHNlLAogICAgICAgICAgInRkX29udmlhIjogdHJ1ZQogICAgICAgIH0KICAgICAgXSwKICAgICAgInRlYXJkcm9wX3BhcmFtZXRlcnMiOiBb
-... (content truncated in tool request)
+{
+	"board": {
+		"3dviewports": [],
+		"design_settings": {
+			"defaults": {
+				"board_outline_line_width": 0.1,
+				"copper_line_width": 0.2,
+				"copper_text_italic": false,
+				"copper_text_size_h": 0.8,
+				"copper_text_size_v": 0.8,
+				"copper_text_thickness": 0.15,
+				"courtyard_line_width": 0.05,
+				"dimension_text_size": 1.0,
+				"dimension_text_thickness": 0.15,
+				"dimension_units": 1,
+				"dimensions": {
+					"arrow_length": 1.27,
+					"extension_offset": 0.5,
+					"keep_text_aligned": true,
+					"text_position": 0,
+					"units_format": 0,
+					"units_mode": 1,
+					"units_override": false
+				},
+				"fab_line_width": 0.1,
+				"fab_text_italic": false,
+				"fab_text_size_h": 1.0,
+				"fab_text_size_v": 1.0,
+				"fab_text_thickness": 0.15,
+				"footprint_text_italic": false,
+				"footprint_text_size_h": 1.0,
+				"footprint_text_size_v": 1.0,
+				"footprint_text_thickness": 0.15,
+				"other_line_width": 0.15,
+				"other_text_italic": false,
+				"other_text_size_h": 1.0,
+				"other_text_size_v": 1.0,
+				"other_text_thickness": 0.15,
+				"pads": {
+					"drill": 0.4,
+					"height": 1.5,
+					"width": 1.5
+				},
+				"silk_line_width": 0.15,
+				"silk_text_italic": false,
+				"silk_text_size_h": 1.0,
+				"silk_text_size_v": 1.0,
+				"silk_text_thickness": 0.15,
+				"solder_mask_clearance": 0.0,
+				"solder_mask_min_width": 0.0,
+				"solder_paste_clearance": 0.0,
+				"solder_paste_margin_ratio": 0.0,
+				"zones": {
+					"45_degree_only": false,
+					"min_clearance": 0.1
+				}
+			},
+			"diff_pair_dimensions": [
+				{
+					"gap": 0.25,
+					"via_gap": 0.25,
+					"width": 0.2
+				}
+			],
+			"drc_exclusions": [],
+			"meta": {
+				"version": 2
+			},
+			"net_settings": {
+				"classes": [
+					{
+						"bus_width": 12.0,
+						"clearance": 0.1,
+						"diff_pair_gap": 0.25,
+						"diff_pair_via_gap": 0.25,
+						"diff_pair_width": 0.2,
+						"line_style": 0,
+						"microvia_diameter": 0.3,
+						"microvia_drill": 0.1,
+						"name": "Default",
+						"pcb_color": "#000000",
+						"schematic_color": "#000000",
+						"track_width": 0.2,
+						"via_diameter": 0.6,
+						"via_drill": 0.3,
+						"wire_width": 6.0
+					}
+				],
+				"meta": {
+					"version": 3
+				},
+				"netclass_patterns": [],
+				"track_widths": [
+					0.2
+				],
+				"via_dimensions": [
+					{
+						"diameter": 0.6,
+						"drill": 0.3
+					}
+				]
+			},
+			"rule_severities": {
+				"annular_width": "warning",
+				"clearance": "warning",
+				"copper_edge_clearance": "warning",
+				"courtyard_overlap": "warning",
+				"diff_pair_gap_out_of_range": "warning",
+				"diff_pair_uncoupled_length_too_long": "warning",
+				"drill_out_of_range": "warning",
+				"duplicate_footprints": "warning",
+				"extra_footprint": "warning",
+				"footprint": "warning",
+				"footprint_type_mismatch": "warning",
+				"hole_clearance": "warning",
+				"invalid_outline": "error",
+				"item_on_disabled_layer": "error",
+				"items_not_allowed": "error",
+				"length_out_of_range": "warning",
+				"malformed_courtyard": "error",
+				"microvia_drill_out_of_range": "warning",
+				"missing_courtyard": "ignore",
+				"missing_footprint": "warning",
+				"net_conflict": "warning",
+				"npth_inside_courtyard": "warning",
+				"padstack": "warning",
+				"pinstack": "warning",
+				"shorting_items": "error",
+				"silk_edge_clearance": "warning",
+				"silk_over_copper": "warning",
+				"silk_overlap": "warning",
+				"solder_mask_bridge": "warning",
+				"starved_thermal": "warning",
+				"text_height": "warning",
+				"text_thickness": "warning",
+				"through_hole_pad_without_hole": "error",
+				"too_many_vias": "warning",
+				"track_width": "warning",
+				"track_width_out_of_range": "warning",
+				"unconnected_items": "warning",
+				"unresolved_variable": "error",
+				"via_diameter": "warning",
+				"zone_fill": "warning"
+			},
+			"rules": {
+				"min_clearance": 0.0,
+				"min_connection": 0.0,
+				"min_copper_edge_clearance": 0.0,
+				"min_hole_clearance": 0.0,
+				"min_hole_to_hole": 0.0,
+				"min_microvia_diameter": 0.0,
+				"min_microvia_drill": 0.0,
+				"min_resolved_spokes": 2,
+				"min_silk_clearance": 0.0,
+				"min_text_height": 0.0,
+				"min_text_thickness": 0.0,
+				"min_through_hole_diameter": 0.0,
+				"min_track_width": 0.0,
+				"min_via_annular_width": 0.0,
+				"min_via_diameter": 0.0,
+				"min_via_drill": 0.0,
+				"min_via_to_via_clearance": 0.0
+			}
+		},
+		"layer_presets": [],
+		"viewports": []
+	},
+	"meta": {
+		"filename": "fotaoparát.kicad_pro",
+		"version": 1
+	},
+	"net_settings": {
+		"classes": [
+			{
+				"bus_width": 12.0,
+				"clearance": 0.1,
+				"diff_pair_gap": 0.25,
+				"diff_pair_via_gap": 0.25,
+				"diff_pair_width": 0.2,
+				"line_style": 0,
+				"microvia_diameter": 0.3,
+				"microvia_drill": 0.1,
+				"name": "Default",
+				"pcb_color": "#000000",
+				"schematic_color": "#000000",
+				"track_width": 0.2,
+				"via_diameter": 0.6,
+				"via_drill": 0.3,
+				"wire_width": 6.0
+			}
+		],
+		"meta": {
+			"version": 3
+		},
+		"netclass_patterns": [],
+		"track_widths": [
+			0.2
+		],
+		"via_dimensions": [
+			{
+				"diameter": 0.6,
+				"drill": 0.3
+			}
+		]
+	}
+}
