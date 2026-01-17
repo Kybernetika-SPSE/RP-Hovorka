@@ -558,34 +558,6 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "clearance": 0.15,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "flash_bus",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.2,
-        "diff_pair_gap": 0.12,
-        "diff_pair_width": 0.12,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "mipi_csi2",
-        "pcb_color": "rgb(255, 159, 55)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -595,15 +567,15 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "mipi_csi2",
+        "netclass": "Default",
         "pattern": "CSI_*"
       },
       {
-        "netclass": "flash_bus",
+        "netclass": "Default",
         "pattern": "FLASH_*"
       },
       {
-        "netclass": "flash_bus",
+        "netclass": "Default",
         "pattern": "Net-\\(IC1-*"
       },
       {
@@ -611,19 +583,19 @@
         "pattern": "GND"
       },
       {
-        "netclass": "mipi_csi2",
+        "netclass": "Default",
         "pattern": "/CSI_DATA_*0"
       },
       {
-        "netclass": "mipi_csi2",
+        "netclass": "Default",
         "pattern": "/CSI_DATA_*1"
       },
       {
-        "netclass": "flash_bus",
+        "netclass": "Default",
         "pattern": "/CSI_CLK*"
       },
       {
-        "netclass": "flash_bus",
+        "netclass": "Default",
         "pattern": "/CSI_CLKP"
       }
     ],
