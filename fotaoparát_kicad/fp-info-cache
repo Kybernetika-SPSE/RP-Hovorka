@@ -1,4 +1,4 @@
-26852073342087177
+26864396294358069
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -13,6 +13,20 @@ audio belton reverb
 0
 7
 7
+BGA24C100P5X5_600X800X120
+BGA24C100P5X5_600X800X120
+W25M02GVTBI
+Integrated Circuit
+0
+24
+24
+BGA24C100P5X5_600X800X120
+Untitled
+
+
+0
+0
+0
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -75046,6 +75060,27 @@ QFN NoLead
 0
 37
 33
+PCM_SamacSys_Parts
+BGA24C100P5X5_600X800X120
+W25M02GVTBI
+Integrated Circuit
+0
+24
+24
+PCM_SamacSys_Parts
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+PCM_SamacSys_Parts
+SON127P800X600X80-9N-D
+W25Q256JVEIQ
+Integrated Circuit
+0
+9
+9
 Package_BGA
 Alliance_TFBGA-36_6x8mm_Layout6x8_P0.75mm
 Alliance TFBGA-36, NSMD, 6.0x8.0mm, 36 Ball, 6x8 Layout, 0.75mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.alliancememory.com/wp-content/uploads/pdf/AS6C1008_Mar_2023V1.2.pdf#page=13
@@ -106709,6 +106744,20 @@ Hirose_FH12-22S-0.5SH
 22
 rnd_shit_co_nema_symboly
 Untitled
+
+
+0
+0
+0
+rnd_shit_co_nema_symboly
+watermark
+
+
+0
+0
+0
+rnd_shit_co_nema_symboly
+watermark2
 
 
 0
