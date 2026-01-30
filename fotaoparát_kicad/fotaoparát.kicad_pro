@@ -46,8 +46,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 4.35,
-          "width": 3.45
+          "height": 1.0,
+          "width": 0.9
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -515,7 +515,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -560,12 +560,12 @@
         "wire_width": 6
       },
       {
-        "name": "Wire_to_via",
+        "clearance": 0.6,
+        "name": "FLASH",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "via_diameter": 6.0,
-        "via_drill": 3.0
+        "track_width": 0.2
       }
     ],
     "meta": {
@@ -579,7 +579,7 @@
         "pattern": "CSI_*"
       },
       {
-        "netclass": "Default",
+        "netclass": "FLASH",
         "pattern": "FLASH_*"
       },
       {
