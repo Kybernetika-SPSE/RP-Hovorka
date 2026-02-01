@@ -11519,7 +11519,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "babe1854-d7af-461d-8139-267dc32afc62")
+		(uuid "babe1854-d7af-461d-8139-267dc32afc63")
 	)
 	(label "DLC"
 		(at 283.21 49.53 0)
@@ -11529,7 +11529,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "babe1854-d7af-461d-8139-267dc32afc62")
+		(uuid "babe1854-d7af-461d-8139-267dc32afc64")
 	)
 	(label "CSI_DATA_N0"
 		(at 208.28 154.94 270)
@@ -12034,7 +12034,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0f705dc3-28f5-4435-a870-f051c87fc37f")
 		(property "Reference" "#PWR018"
 			(at 314.96 198.12 0)
@@ -12046,7 +12045,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 314.96 196.85 0)
+			(at 312.42 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13826,7 +13825,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "44c4128a-7997-46ca-8b10-a1f8da9ecb57")
 		(property "Reference" "#PWR017"
 			(at 314.96 205.74 0)
@@ -13838,7 +13836,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 314.96 204.47 0)
+			(at 312.674 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14474,7 +14472,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2763dd0c-e49a-499d-b354-da11e3326def")
+			(uuid "2763dd0c-e49a-499d-b354-da11e3326df0")
 		)
 		(instances
 			(project ""
@@ -15962,7 +15960,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2763dd0c-e49a-499d-b354-da11e3326def")
+			(uuid "2763dd0c-e49a-499d-b354-da11e3326df1")
 		)
 		(instances
 			(project ""
@@ -16566,10 +16564,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "18858a61-6359-435c-a310-4051d18d0f2b")
+			(uuid "18858a61-6359-435c-a310-4051d18d0f2c")
 		)
 		(pin "2"
-			(uuid "fe1139eb-8a1f-422e-9fd1-8121508f2465")
+			(uuid "fe1139eb-8a1f-422e-9fd1-8121508f2466")
 		)
 		(instances
 			(project ""
@@ -17484,7 +17482,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d297e1ab-2b01-45be-b364-2f8777cd1196")
 		(property "Reference" "#PWR011"
 			(at 314.96 213.36 0)
@@ -17496,7 +17493,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 314.96 212.09 0)
+			(at 312.42 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17817,7 +17814,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e637b9a6-82f9-486c-bae2-cdcf93b8e534")
 		(property "Reference" "#PWR019"
 			(at 314.96 190.5 0)
@@ -17829,7 +17825,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 314.96 189.23 0)
+			(at 312.166 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18073,13 +18069,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "9a425bfd-fe18-43a2-bdc1-febcff68e599")
+			(uuid "9a425bfd-fe18-43a2-bdc1-febcff68e59a")
 		)
 		(pin "3"
-			(uuid "2ead3d2e-b9e8-4488-8bdc-8e36b1d157bf")
+			(uuid "2ead3d2e-b9e8-4488-8bdc-8e36b1d157c0")
 		)
 		(pin "2"
-			(uuid "a8a1c46a-dfb3-42f2-ab7b-6f1ab96e7332")
+			(uuid "a8a1c46a-dfb3-42f2-ab7b-6f1ab96e7333")
 		)
 		(instances
 			(project "fotaoparát"
