@@ -46,8 +46,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.0,
-          "width": 0.9
+          "height": 0.65,
+          "width": 0.2
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -555,17 +555,27 @@
         "priority": 2147483647,
         "schematic_color": "rgb(0, 0, 0)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.5,
+        "via_drill": 0.25,
         "wire_width": 6
       },
       {
         "clearance": 0.6,
         "name": "FLASH",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2
+      },
+      {
+        "clearance": 0.1,
+        "diff_pair_gap": 0.3,
+        "diff_pair_width": 0.1,
+        "name": "csi",
+        "pcb_color": "rgb(255, 63, 7)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1
       }
     ],
     "meta": {
@@ -575,7 +585,7 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
+        "netclass": "csi",
         "pattern": "CSI_*"
       },
       {
@@ -790,6 +800,14 @@
     [
       "0ab33720-0b6a-449c-80c0-2b7abe4d9450",
       "Root"
+    ],
+    [
+      "04ebdae2-67d7-4749-bd3e-f9c05089f6fb",
+      "POWER"
+    ],
+    [
+      "be787f52-1025-4e17-92bf-51f58d5e4e6f",
+      "PERIPHERALS"
     ]
   ],
   "text_variables": {}
