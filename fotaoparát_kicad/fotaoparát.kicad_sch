@@ -4715,15 +4715,6 @@
 		(uuid "906aecba-a692-4e52-b6d0-45de6f889c48")
 	)
 	(bus_entry
-		(at 93.98 160.02)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94ef7375-f10d-4a44-a7a1-93b013abd06f")
-	)
-	(bus_entry
 		(at 93.98 139.7)
 		(size 2.54 2.54)
 		(stroke
@@ -4776,15 +4767,6 @@
 			(type default)
 		)
 		(uuid "c510bbe9-cd09-47d4-9d03-1c688f314663")
-	)
-	(bus_entry
-		(at 93.98 162.56)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf8068b2-a669-4a62-9189-39816a67183c")
 	)
 	(bus_entry
 		(at 93.98 137.16)
@@ -5054,16 +5036,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 165.1) (xy 109.22 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e31860e-0a63-46b2-bb2b-c624663a648a")
-	)
-	(wire
-		(pts
 			(xy 190.5 74.93) (xy 227.33 74.93)
 		)
 		(stroke
@@ -5234,6 +5206,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 143.51) (xy 256.54 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c5251db-7ed1-4c8e-8324-bc93aa38092e")
+	)
+	(wire
+		(pts
 			(xy 199.39 214.63) (xy 204.47 214.63)
 		)
 		(stroke
@@ -5361,16 +5343,6 @@
 			(type default)
 		)
 		(uuid "6aef7fcb-c52e-4418-8db1-c92b695ef026")
-	)
-	(wire
-		(pts
-			(xy 96.52 162.56) (xy 109.22 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bad5cca-701f-4fab-9ff4-9cec15700327")
 	)
 	(bus
 		(pts
@@ -5511,16 +5483,6 @@
 			(type default)
 		)
 		(uuid "7c79e498-d682-4ac1-bf07-93118c79d37f")
-	)
-	(bus
-		(pts
-			(xy 93.98 160.02) (xy 93.98 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7da35cc6-b367-4cbe-82b8-1c78b0ca5128")
 	)
 	(bus
 		(pts
@@ -5721,6 +5683,16 @@
 			(type default)
 		)
 		(uuid "a0d2f699-ec3d-4d9f-a94c-5dc00fb21f4b")
+	)
+	(wire
+		(pts
+			(xy 256.54 151.13) (xy 256.54 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a11087be-bd98-4033-bd2b-151390fd1a30")
 	)
 	(wire
 		(pts
@@ -6114,6 +6086,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 148.59) (xy 256.54 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8d56862-62fd-4f4b-9549-9a3a4c6497b0")
+	)
+	(wire
+		(pts
 			(xy 180.34 222.25) (xy 182.88 222.25)
 		)
 		(stroke
@@ -6271,16 +6253,6 @@
 			(type default)
 		)
 		(uuid "f858dc18-5169-4c1b-bdc5-1ba78f1dbbcd")
-	)
-	(wire
-		(pts
-			(xy 256.54 148.59) (xy 226.06 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa6f2897-89d0-4adb-ac0a-12b2ab83c1b2")
 	)
 	(wire
 		(pts
@@ -6942,26 +6914,6 @@
 		)
 		(uuid "cd30a638-161e-4a89-a353-7cfddf3af816")
 	)
-	(label "I2C_SCL"
-		(at 96.52 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ce17911c-542b-46ea-8708-585d5bbd0329")
-	)
-	(label "I2C_SDA"
-		(at 96.52 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ce17911c-542b-46ea-8708-585d5bbd032c")
-	)
 	(label "ESP_VDD_HP"
 		(at 105.41 172.72 180)
 		(effects
@@ -7102,6 +7054,28 @@
 		)
 		(uuid "fdf12d95-8922-4034-9b25-b2c5b8fcbf6f")
 	)
+	(global_label "I2C_SDA"
+		(shape input)
+		(at 256.54 151.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3035a3e9-583c-41ea-847a-4b924478e772")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 267.1452 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CAM_SCL"
 		(shape input)
 		(at 256.54 148.59 0)
@@ -7137,6 +7111,28 @@
 		(uuid "82761c35-df0a-4bab-a24d-4d20a9db89a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 269.9876 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 256.54 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c6f61d1-060d-4995-8926-6ce4abbf393a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 267.0847 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
