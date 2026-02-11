@@ -2856,6 +2856,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 163.83) (xy 35.56 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06bfb97e-f76f-48c3-ad15-473e7f7ba81f")
+	)
+	(wire
+		(pts
 			(xy 50.8 29.21) (xy 53.34 29.21)
 		)
 		(stroke
@@ -2913,6 +2923,16 @@
 			(type default)
 		)
 		(uuid "1731b309-bb2f-482c-bcd8-bcd0e0d53434")
+	)
+	(wire
+		(pts
+			(xy 22.86 163.83) (xy 22.86 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21322920-42bf-4ecd-88b3-660b3ac709a2")
 	)
 	(wire
 		(pts
@@ -3133,6 +3153,16 @@
 			(type default)
 		)
 		(uuid "71cdd4de-f898-4954-8977-723e7535932b")
+	)
+	(wire
+		(pts
+			(xy 35.56 163.83) (xy 35.56 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74f2ea96-c530-4613-ab48-25008e051941")
 	)
 	(wire
 		(pts
@@ -3456,6 +3486,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 165.1) (xy 48.26 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d56e18ed-a074-48b8-b176-13f59bad6f73")
+	)
+	(wire
+		(pts
 			(xy 88.9 48.26) (xy 88.9 62.23)
 		)
 		(stroke
@@ -3703,7 +3743,7 @@
 	)
 	(hierarchical_label "VDDO_FLASH"
 		(shape input)
-		(at 22.86 165.1 0)
+		(at 22.86 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3725,7 +3765,7 @@
 	)
 	(hierarchical_label "VDDO_PSRAM"
 		(shape input)
-		(at 35.56 165.1 0)
+		(at 36.83 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3733,17 +3773,6 @@
 			(justify left)
 		)
 		(uuid "56fa730c-ccf2-4c20-8b7d-1c39167d4d46")
-	)
-	(hierarchical_label "VDD_MIPI_DPHY"
-		(shape input)
-		(at 146.05 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "663f30e9-0b36-4d07-aae5-73b7e92d9770")
 	)
 	(hierarchical_label "VDD_PSRAM_1"
 		(shape input)
@@ -3824,7 +3853,7 @@
 	)
 	(hierarchical_label "VDDO_3"
 		(shape input)
-		(at 48.26 165.1 0)
+		(at 50.8 165.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3876,6 +3905,17 @@
 			(justify left)
 		)
 		(uuid "fc4a9769-0895-4013-b83b-c9f3ea26ad6f")
+	)
+	(hierarchical_label "VDDO_3"
+		(shape input)
+		(at 146.05 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fcf551cb-b8c0-4558-bccb-7ae259978e40")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -4026,7 +4066,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0deb88ec-e820-4db1-9cf1-4bae20d47cbd")
-		(property "Reference" "BAT-1"
+		(property "Reference" "BAT_OUT1"
 			(at 89.154 64.77 0)
 			(effects
 				(font
@@ -4077,7 +4117,7 @@
 		(instances
 			(project "fotaoparát"
 				(path "/0ab33720-0b6a-449c-80c0-2b7abe4d9450/04ebdae2-67d7-4749-bd3e-f9c05089f6fb"
-					(reference "BAT-1")
+					(reference "BAT_OUT1")
 					(unit 1)
 				)
 			)
@@ -5116,7 +5156,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "51d6bc6a-b3f2-48c8-b332-12134901d95e")
-		(property "Reference" "BAT+1"
+		(property "Reference" "BAT_IN1"
 			(at 28.194 22.86 0)
 			(effects
 				(font
@@ -5167,7 +5207,7 @@
 		(instances
 			(project "fotaoparát"
 				(path "/0ab33720-0b6a-449c-80c0-2b7abe4d9450/04ebdae2-67d7-4749-bd3e-f9c05089f6fb"
-					(reference "BAT+1")
+					(reference "BAT_IN1")
 					(unit 1)
 				)
 			)
