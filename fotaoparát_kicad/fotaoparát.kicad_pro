@@ -46,8 +46,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.65,
-          "width": 0.2
+          "height": 1.0,
+          "width": 0.9
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -259,7 +259,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -564,7 +566,7 @@
         "diff_pair_width": 0.15,
         "name": "CSI/DSI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "via_diameter": 0.45,
         "via_drill": 0.25
@@ -573,9 +575,17 @@
         "clearance": 0.6,
         "name": "FLASH",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2
+      },
+      {
+        "clearance": 0.2,
+        "name": "POWER_RAILS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.6
       }
     ],
     "meta": {

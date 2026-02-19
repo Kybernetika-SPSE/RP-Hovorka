@@ -1,0 +1,127 @@
+(footprint "EOS_550D_SHUTTER_BUTTON"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "EOS550D_SHUTT_(yo)_BUTT"
+		(at 0 -4.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d3b7d26b-7245-4935-bbc3-3eba67f16746")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "EOS_550D_SHUTTER_BUTTON"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e77b6b1c-e5bd-41ce-8886-db1ebb861e6d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b07c33dd-8625-49ad-a358-8a193f21ab97")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "caa4dab3-5192-4c82-822f-a3f016e3c731")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center 0 0)
+		(end 1.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "dc751dfa-818e-4b5f-8b77-76c6058bf778")
+	)
+	(fp_rect
+		(start -3 -3.5)
+		(end 3 3.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2243d459-1211-42bb-9fdc-c75fcd6478fa")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0394399a-7da8-4c59-b9fd-cd227a985d88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3 -2)
+		(size 0.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "4888f5e6-645e-4267-b5ef-16a897b790c4")
+	)
+	(pad "2" smd roundrect
+		(at -3 2)
+		(size 0.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "43eb473e-e393-4e6f-a012-f15636592b83")
+	)
+	(pad "3" smd roundrect
+		(at 3 2)
+		(size 0.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "27bb99f4-1919-41f6-8922-4585f461718b")
+	)
+	(pad "4" smd roundrect
+		(at 3 -2)
+		(size 0.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "c56c6e7e-c4d6-4b4b-8217-4b64ba3dd29d")
+	)
+	(pad "SH" smd roundrect
+		(at 3 -3.5)
+		(size 0.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "03538a54-426c-46b6-b608-7cdf28cd4db1")
+	)
+	(embedded_fonts no)
+)

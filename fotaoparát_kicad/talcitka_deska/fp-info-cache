@@ -1,4 +1,4 @@
-26845006452300799
+26848549139020324
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -32045,6 +32045,13 @@ solder Pin_ with flat fork
 0
 1
 1
+Connector_Pin
+Untitled
+
+
+0
+0
+0
 Connector_PinHeader_1.00mm
 PinHeader_1x01_P1.00mm_Horizontal
 Through hole angled pin header, 1x01, 1.00mm pitch, 2.0mm pin length, single row
@@ -106693,3 +106700,10 @@ Varistor VF
 0
 2
 2
+vlastni_footprinty
+EOS_550D_SHUTTER_BUTTON
+
+
+0
+5
+5
