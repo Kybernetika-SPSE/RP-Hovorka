@@ -6868,10 +6868,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "bb38ad8f-83d8-4d8f-9a51-b913dbc466bf")
+			(uuid "bb38ad8f-83d8-4d8f-9a51-b913dbc466c0")
 		)
 		(pin "1"
-			(uuid "a51cbc75-f627-41ab-a949-ff4c5dd94c0c")
+			(uuid "a51cbc75-f627-41ab-a949-ff4c5dd94c0d")
 		)
 		(instances
 			(project ""
