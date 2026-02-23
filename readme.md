@@ -60,11 +60,13 @@ Cíl je sestrojit fotoaparát, s rozhraním, volitelními funkcemi atd. atd. atd
 
 - [ ] **Canon 550D tlačítka pinout**
   - Najít/změřit pinout flex kabelu
+     -> mám, dvě silné cesty jsou A a K diody (katoda je na kraji ven), naproti je spol. vodič tlačítek
   - Určit zapojení (matice/analog ladder/samostatné GPIO)
+      -> je to žebřík, yapojení už mám
 
 ### NICE TO HAVE:
 
-- [ ] **LEDky indikace stavu** (pokud zbyde místo)
+- [ ] **LEDky indikace stavu** (pokud zbyde místo) -> je jedna původní červená, možná jednu přidam
 - [ ] **Test points** (3.3V, 7.2V, GND) - volitelné
 
 ---
