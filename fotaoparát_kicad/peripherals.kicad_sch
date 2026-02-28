@@ -3355,6 +3355,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 60.96) (xy 160.02 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e005a95-9341-47ce-a823-681e3fe152c0")
+	)
+	(wire
+		(pts
 			(xy 99.06 66.04) (xy 127 66.04)
 		)
 		(stroke
@@ -3585,7 +3595,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 60.96) (xy 255.27 60.96)
+			(xy 180.34 60.96) (xy 255.27 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4795,7 +4805,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.592 43.18 0)
 			(effects
@@ -4817,7 +4827,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.592 40.64 0)
 			(effects
@@ -4839,7 +4849,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.592 50.8 0)
 			(effects
@@ -4861,7 +4871,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d4a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.592 45.72 0)
 			(effects
@@ -4883,7 +4893,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d4a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.592 38.1 0)
 			(effects
@@ -4905,7 +4915,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d4a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.592 58.42 0)
 			(effects
@@ -4927,7 +4937,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d4a3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.5315 60.96 0)
 			(effects
@@ -4949,7 +4959,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d4a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.592 55.88 0)
 			(effects
@@ -4971,7 +4981,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d49c")
+		(uuid "5ad89091-3728-419e-8518-a7d6dfe8d4a5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.592 53.34 0)
 			(effects
@@ -5520,6 +5530,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C962136"
+			(at 50.8 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c2217099-5445-4feb-a3f7-6a47d34c9d38")
 		)
@@ -5796,6 +5815,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C668346"
+			(at 222.25 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5a4d338d-25ac-4308-8091-be7cfee8f559")
 		)
@@ -5857,6 +5885,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 184.15 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 184.15 77.47 0)
 			(effects
 				(font
@@ -5934,6 +5971,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C668346"
+			(at 191.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6939e141-0981-4c23-867a-ae84a5cce8fe")
 		)
@@ -5994,6 +6040,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 130.81 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C962136"
+			(at 130.81 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6127,6 +6182,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 237.49 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 237.49 77.47 0)
 			(effects
 				(font
@@ -6273,6 +6337,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C668346"
+			(at 199.39 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1524a6fb-88a2-4021-97c6-a56d3a4b53d5")
 		)
@@ -6407,6 +6480,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C6250813"
+			(at 132.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "49dd4db7-35c1-408c-85da-569f62957e66")
 		)
@@ -6508,6 +6590,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 130.81 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
+			(at 130.81 20.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6705,6 +6796,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x15, script generated"
+			(at 35.56 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C6250813"
 			(at 35.56 45.72 0)
 			(effects
 				(font
@@ -6949,6 +7049,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 229.87 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 229.87 77.47 0)
 			(effects
 				(font
@@ -7395,6 +7504,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C597972"
+			(at 52.07 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "dd56213a-073e-4940-9642-1fd67bdc8f04")
 		)
@@ -7548,6 +7666,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 207.01 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 207.01 77.47 0)
 			(effects
 				(font
@@ -7824,6 +7951,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C668346"
+			(at 214.63 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b95866a7-fe7e-4e74-9399-a8a40e54c8ec")
 		)
@@ -7885,6 +8021,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 245.11 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 245.11 77.47 0)
 			(effects
 				(font
@@ -8027,6 +8172,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C668346"
+			(at 50.8 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ccde6a4c-d3f0-4467-9269-05e53fcf1469")
 		)
@@ -8044,7 +8198,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 163.83 60.96 90)
+		(at 176.53 60.96 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8052,7 +8206,7 @@
 		(dnp no)
 		(uuid "edfb3202-5b7a-4fc6-8e59-c86d3cc01b73")
 		(property "Reference" "R8"
-			(at 165.1 63.5 90)
+			(at 177.8 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8060,8 +8214,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 165.862 65.024 90)
+		(property "Value" "330R"
+			(at 178.562 65.024 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8070,7 +8224,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 163.83 62.738 90)
+			(at 176.53 62.738 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8079,7 +8233,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 60.96 0)
+			(at 176.53 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8088,7 +8242,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 163.83 60.96 0)
+			(at 176.53 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
