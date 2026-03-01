@@ -4872,6 +4872,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C22965"
+			(at 86.36 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bb38ad8f-83d8-4d8f-9a51-b913dbc466bf")
 		)
@@ -5248,7 +5257,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3v6 Zener"
+		(property "Value" "5V7 Zener"
 			(at 118.11 126.9999 90)
 			(effects
 				(font
@@ -5302,7 +5311,7 @@
 				(hide yes)
 			)
 		)
-		(property "LSCS Number" "C173412"
+		(property "LSCS Number" "C2993567"
 			(at 115.57 125.73 90)
 			(effects
 				(font
@@ -5657,7 +5666,7 @@
 				)
 			)
 		)
-		(property "Value" "4,7uH"
+		(property "Value" "10uH"
 			(at 199.39 116.84 90)
 			(effects
 				(font
@@ -5712,6 +5721,15 @@
 		)
 		(property "LCSC Part" "C915148"
 			(at 199.39 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C713281"
+			(at 199.39 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5898,7 +5916,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3v6 Zener"
+		(property "Value" "6V2 Zener"
 			(at 234.95 126.9999 90)
 			(effects
 				(font
@@ -5952,7 +5970,7 @@
 				(hide yes)
 			)
 		)
-		(property "LSCS Number" "C173412"
+		(property "LSCS Number" "C397931"
 			(at 232.41 125.73 90)
 			(effects
 				(font
@@ -6689,6 +6707,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C105579"
+			(at 86.36 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bb38ad8f-83d8-4d8f-9a51-b913dbc466c0")
 		)
@@ -7052,6 +7079,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 203.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C14675"
 			(at 203.2 132.08 0)
 			(effects
 				(font
@@ -8026,6 +8062,15 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 372.11 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C53055681"
 			(at 372.11 210.82 0)
 			(effects
 				(font
@@ -9154,7 +9199,7 @@
 				)
 			)
 		)
-		(property "Value" "4,7uH"
+		(property "Value" "10uH"
 			(at 82.55 116.84 90)
 			(effects
 				(font
@@ -9209,6 +9254,15 @@
 		)
 		(property "LCSC Part" "C915148"
 			(at 82.55 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C713281"
+			(at 82.55 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9605,6 +9659,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 308.61 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C105580"
+			(at 308.61 218.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11536,6 +11599,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C137788"
+			(at 203.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "81686a8c-ef17-47f8-8bce-a2a6bb4bf884")
 		)
@@ -12306,7 +12378,7 @@
 				)
 			)
 		)
-		(property "Value" "4,7uH"
+		(property "Value" "3,9uH"
 			(at 82.55 38.1 90)
 			(effects
 				(font
@@ -12361,6 +12433,15 @@
 		)
 		(property "LCSC Part" "C915148"
 			(at 82.55 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C251964"
+			(at 82.55 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12703,6 +12784,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 308.61 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C105580"
+			(at 308.61 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
