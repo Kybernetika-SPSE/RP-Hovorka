@@ -29,7 +29,7 @@ Cíl je sestrojit fotoaparát, s rozhraním, volitelními funkcemi atd. atd. atd
 
 ### KRITICKÉ (musí být hotové):
 
-- [ ] **I2C Pull-up rezistory pro kameru**
+- [✅] **I2C Pull-up rezistory pro kameru**
   - `I2C_SDA → 4.7kΩ → 3.3V`
   - `I2C_SCL → 4.7kΩ → 3.3V`
   - Pouzdro: 0402 nebo 0603
@@ -46,7 +46,7 @@ Cíl je sestrojit fotoaparát, s rozhraním, volitelními funkcemi atd. atd. atd
   - Decoupling: 100nF u KAŽDÉHO VDD pinu (0402 nebo 0603)
   - 10µF na každých 4-5 VDD pinů (0603 nebo 0805)
 
-- [ ] **Power button zapojení**
+- [✅] **Power button zapojení**
   - GPIO pin vybraný (libovolný volný GPIO)
   - 10kΩ pull-up k 3.3V
   - Software: Light Sleep mode
@@ -58,13 +58,17 @@ Cíl je sestrojit fotoaparát, s rozhraním, volitelními funkcemi atd. atd. atd
   - Umístění: <5mm od SD konektoru
   - (volitelné, ale doporučené za ~$0.20)
 
-- [ ] **Canon 550D tlačítka pinout**
+- [✅] **Canon 550D tlačítka pinout**
   - Najít/změřit pinout flex kabelu
      -> mám, dvě silné cesty jsou A a K diody (katoda je na kraji ven), naproti je spol. vodič tlačítek
   - Určit zapojení (matice/analog ladder/samostatné GPIO)
       -> je to žebřík, yapojení už mám
 
-### NICE TO HAVE:
+- [ ] **Krytal předělat**
+  -LSCS nemá ten krystal co jsem původně plánoval.
+    resp. má ale jiný pinout, musím reroutovat
+  
+  ### NICE TO HAVE:
 
 - [ ] **LEDky indikace stavu** (pokud zbyde místo) -> je jedna původní červená, možná jednu přidam
 - [ ] **Test points** (3.3V, 7.2V, GND) - volitelné

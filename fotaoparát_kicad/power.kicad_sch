@@ -4442,7 +4442,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 72.39 38.1 90)
 			(effects
 				(font
@@ -4504,6 +4504,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C66501"
+			(at 72.39 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a3c74928-04b2-4adc-bc1c-c5a7cb0434c9")
 		)
@@ -4538,7 +4547,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 135.89 260.3499 0)
 			(effects
 				(font
@@ -4566,6 +4575,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 132.08 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 132.08 259.08 0)
 			(effects
 				(font
@@ -4608,7 +4626,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 149.86 240.0299 0)
 			(effects
 				(font
@@ -4644,6 +4662,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C668346"
+			(at 146.05 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1b4c8f4f-c5be-473c-9651-048fec19f65b")
 		)
@@ -4664,7 +4691,7 @@
 		(at 93.98 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0deb88ec-e820-4db1-9cf1-4bae20d47cbd")
@@ -4837,6 +4864,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 86.36 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C22965"
 			(at 86.36 132.08 0)
 			(effects
 				(font
@@ -5142,7 +5178,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 29.21 219.7099 0)
 			(effects
 				(font
@@ -5170,6 +5206,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 25.4 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 25.4 218.44 0)
 			(effects
 				(font
@@ -5212,7 +5257,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3v6 Zener"
+		(property "Value" "5V7 Zener"
 			(at 118.11 126.9999 90)
 			(effects
 				(font
@@ -5266,6 +5311,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C2993567"
+			(at 115.57 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dc6d0d89-f2ff-4eed-93e1-89663eb9290e")
 		)
@@ -5300,7 +5354,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 67.31 199.3899 0)
 			(effects
 				(font
@@ -5328,6 +5382,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 63.5 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 63.5 198.12 0)
 			(effects
 				(font
@@ -5561,6 +5624,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C2762594"
+			(at 104.14 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "85729a83-b26e-426b-adcc-54e4165e645d")
 		)
@@ -5594,7 +5666,7 @@
 				)
 			)
 		)
-		(property "Value" "4,7uH"
+		(property "Value" "10uH"
 			(at 199.39 116.84 90)
 			(effects
 				(font
@@ -5649,6 +5721,15 @@
 		)
 		(property "LCSC Part" "C915148"
 			(at 199.39 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C713281"
+			(at 199.39 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5756,7 +5837,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 135.89 200.6599 0)
 			(effects
 				(font
@@ -5784,6 +5865,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 132.08 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 132.08 199.39 0)
 			(effects
 				(font
@@ -5826,7 +5916,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3v6 Zener"
+		(property "Value" "6V2 Zener"
 			(at 234.95 126.9999 90)
 			(effects
 				(font
@@ -5872,6 +5962,15 @@
 			)
 		)
 		(property "LCSC" "C66886"
+			(at 232.41 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C397931"
 			(at 232.41 125.73 90)
 			(effects
 				(font
@@ -6016,6 +6115,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C307385"
+			(at 50.8 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7ff61ac0-de01-4616-9cf7-96e6bcdfdb64")
 		)
@@ -6102,7 +6210,7 @@
 		(at 82.55 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "51d6bc6a-b3f2-48c8-b332-12134901d95e")
@@ -6248,7 +6356,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 41.91 240.0299 0)
 			(effects
 				(font
@@ -6276,6 +6384,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 38.1 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 38.1 238.76 0)
 			(effects
 				(font
@@ -6384,7 +6501,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 25.4 48.2599 0)
 			(effects
 				(font
@@ -6439,6 +6556,15 @@
 			)
 		)
 		(property "LCSC Part" "C14663"
+			(at 21.59 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C66501"
 			(at 21.59 46.99 0)
 			(effects
 				(font
@@ -6581,6 +6707,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C105579"
+			(at 86.36 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bb38ad8f-83d8-4d8f-9a51-b913dbc466c0")
 		)
@@ -6680,7 +6815,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 72.39 116.84 90)
 			(effects
 				(font
@@ -6735,6 +6870,15 @@
 		)
 		(property "LCSC Part" "C14663"
 			(at 72.39 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C66501"
+			(at 72.39 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6943,6 +7087,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C14675"
+			(at 203.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "81a8496f-bbf0-4305-8341-0114347e2849")
 		)
@@ -6976,7 +7129,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 189.23 116.84 90)
 			(effects
 				(font
@@ -7031,6 +7184,15 @@
 		)
 		(property "LCSC Part" "C14663"
 			(at 189.23 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C66501"
+			(at 189.23 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7100,6 +7262,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 38.1 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C307385"
 			(at 38.1 259.08 0)
 			(effects
 				(font
@@ -7274,7 +7445,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 29.21 199.3899 0)
 			(effects
 				(font
@@ -7302,6 +7473,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 25.4 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 25.4 198.12 0)
 			(effects
 				(font
@@ -7476,7 +7656,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 29.21 240.0299 0)
 			(effects
 				(font
@@ -7504,6 +7684,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 25.4 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 25.4 238.76 0)
 			(effects
 				(font
@@ -7664,6 +7853,15 @@
 			)
 		)
 		(property "LCSC Part" "C59461"
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C2762594"
 			(at 93.98 46.99 0)
 			(effects
 				(font
@@ -7872,6 +8070,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C53055681"
+			(at 372.11 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A9"
 			(uuid "67720dd2-1238-4da1-bd80-567ed832ec80")
 		)
@@ -7977,6 +8184,15 @@
 			)
 		)
 		(property "Description" "2A, 500kHz Buck DC/DC Converter, adjustable output voltage, TSOT-23-6"
+			(at 172.72 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C2071868"
 			(at 172.72 121.92 0)
 			(effects
 				(font
@@ -8199,6 +8415,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C143773"
+			(at 30.48 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "19620976-4d01-4347-b0c7-bc968def28e3")
 		)
@@ -8233,7 +8458,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 41.91 199.3899 0)
 			(effects
 				(font
@@ -8261,6 +8486,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 38.1 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 38.1 198.12 0)
 			(effects
 				(font
@@ -8346,6 +8580,15 @@
 			)
 		)
 		(property "LCSC" "C118278"
+			(at 344.17 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C118278"
 			(at 344.17 233.68 0)
 			(effects
 				(font
@@ -8598,6 +8841,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C2762594"
+			(at 210.82 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c22f7f3a-17a2-48e3-9c9a-aad703906822")
 		)
@@ -8632,7 +8884,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 149.86 219.7099 0)
 			(effects
 				(font
@@ -8660,6 +8912,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 146.05 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 146.05 218.44 0)
 			(effects
 				(font
@@ -8768,7 +9029,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 25.4 126.9999 0)
 			(effects
 				(font
@@ -8823,6 +9084,15 @@
 			)
 		)
 		(property "LCSC Part" "C14663"
+			(at 21.59 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C66501"
 			(at 21.59 125.73 0)
 			(effects
 				(font
@@ -8929,7 +9199,7 @@
 				)
 			)
 		)
-		(property "Value" "4,7uH"
+		(property "Value" "10uH"
 			(at 82.55 116.84 90)
 			(effects
 				(font
@@ -8984,6 +9254,15 @@
 		)
 		(property "LCSC Part" "C915148"
 			(at 82.55 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C713281"
+			(at 82.55 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9387,6 +9666,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C105580"
+			(at 308.61 218.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "438ad0e5-f011-4e9a-8e7c-480021122feb")
 		)
@@ -9523,6 +9811,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C143773"
+			(at 15.24 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "485fcaf2-d5bc-4631-b4a5-baf9e450a91d")
 		)
@@ -9612,6 +9909,15 @@
 			)
 		)
 		(property "LCSC Part" "C19702"
+			(at 151.13 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C962136"
 			(at 151.13 125.73 0)
 			(effects
 				(font
@@ -9781,6 +10087,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C780769"
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a9b8f06f-0a70-4831-905a-1aa273f73a29")
 		)
@@ -9893,7 +10208,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 158.75 200.6599 0)
 			(effects
 				(font
@@ -9921,6 +10236,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 154.94 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 154.94 199.39 0)
 			(effects
 				(font
@@ -10063,6 +10387,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C2071868"
+			(at 55.88 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "fb1f90bc-d9e5-48a2-a8d7-b15132233b7a")
 		)
@@ -10144,6 +10477,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C962136"
+			(at 132.08 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c4f4778c-4d80-478e-bcb9-a5be6218e8e9")
 		)
@@ -10178,7 +10520,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 54.61 219.7099 0)
 			(effects
 				(font
@@ -10206,6 +10548,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 50.8 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 50.8 218.44 0)
 			(effects
 				(font
@@ -10380,7 +10731,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 54.61 199.3899 0)
 			(effects
 				(font
@@ -10408,6 +10759,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 50.8 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 50.8 198.12 0)
 			(effects
 				(font
@@ -10510,6 +10870,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C2762594"
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "abe2e356-e3db-43cd-a38e-64031d150f0d")
 		)
@@ -10590,6 +10959,15 @@
 			)
 		)
 		(property "LCSC" "C66886"
+			(at 115.57 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C173412"
 			(at 115.57 46.99 90)
 			(effects
 				(font
@@ -10764,7 +11142,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 80.01 199.3899 0)
 			(effects
 				(font
@@ -10792,6 +11170,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 76.2 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 76.2 198.12 0)
 			(effects
 				(font
@@ -10966,7 +11353,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 41.91 219.7099 0)
 			(effects
 				(font
@@ -10994,6 +11381,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 38.1 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 38.1 218.44 0)
 			(effects
 				(font
@@ -11203,6 +11599,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C137788"
+			(at 203.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "81686a8c-ef17-47f8-8bce-a2a6bb4bf884")
 		)
@@ -11265,6 +11670,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 25.4 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C307385"
 			(at 25.4 259.08 0)
 			(effects
 				(font
@@ -11362,6 +11776,15 @@
 			)
 		)
 		(property "LCSC Part" "C19702"
+			(at 34.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C962136"
 			(at 34.29 46.99 0)
 			(effects
 				(font
@@ -11602,7 +12025,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 149.86 260.3499 0)
 			(effects
 				(font
@@ -11630,6 +12053,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 146.05 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 146.05 259.08 0)
 			(effects
 				(font
@@ -11798,6 +12230,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C2762594"
+			(at 93.98 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d20cf64d-5832-4dd8-8ca6-c635f0be9c3d")
 		)
@@ -11895,6 +12336,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C962136"
+			(at 34.29 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cc6df1b7-cd88-422e-86f4-62080b3a3b93")
 		)
@@ -11928,7 +12378,7 @@
 				)
 			)
 		)
-		(property "Value" "4,7uH"
+		(property "Value" "3,9uH"
 			(at 82.55 38.1 90)
 			(effects
 				(font
@@ -11983,6 +12433,15 @@
 		)
 		(property "LCSC Part" "C915148"
 			(at 82.55 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C251964"
+			(at 82.55 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12084,6 +12543,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C2762594"
+			(at 220.98 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fcf62352-6f52-4e8e-9af3-6f071983bc28")
 		)
@@ -12118,7 +12586,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 142.24 126.9999 0)
 			(effects
 				(font
@@ -12173,6 +12641,15 @@
 			)
 		)
 		(property "LCSC Part" "C14663"
+			(at 138.43 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C66501"
 			(at 138.43 125.73 0)
 			(effects
 				(font
@@ -12314,6 +12791,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C105580"
+			(at 308.61 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd7fceef-dbda-4675-b23e-d1e2e782d45c")
 		)
@@ -12376,6 +12862,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 132.08 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C962136"
 			(at 132.08 218.44 0)
 			(effects
 				(font

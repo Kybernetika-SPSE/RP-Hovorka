@@ -678,7 +678,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal_GND23"
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -695,7 +695,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Crystal_GND23"
+			(property "Value" "Crystal_GND24"
 				(at 3.175 3.175 0)
 				(effects
 					(font
@@ -722,7 +722,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Four pin crystal, GND on pins 2 and 3"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -749,7 +749,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_GND23_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
 						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
@@ -858,7 +858,7 @@
 					)
 				)
 			)
-			(symbol "Crystal_GND23_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -898,14 +898,14 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 1.27)
-					(name "3"
+					(name "4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -916,14 +916,14 @@
 				(pin passive line
 					(at 3.81 0 180)
 					(length 1.27)
-					(name "4"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8286,6 +8286,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C98220"
+			(at 361.95 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "63173b05-0519-4ce9-bc23-4357d746ab98")
 		)
@@ -8418,6 +8427,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C98220"
+			(at 349.25 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6f3f02a8-10fe-40f3-b1a7-f97f23c54b85")
 		)
@@ -8479,6 +8497,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 140.97 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C3872637"
+			(at 140.97 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8584,7 +8611,7 @@
 				)
 			)
 		)
-		(property "Value" "0,1uF"
+		(property "Value" "100nF"
 			(at 180.086 228.854 90)
 			(effects
 				(font
@@ -8612,6 +8639,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 176.53 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
+			(at 176.53 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8754,6 +8790,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C14675"
+			(at 284.48 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84d82cdc-8cf8-479e-ba51-d3fb7134e293")
 		)
@@ -8888,6 +8933,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C221676"
+			(at 128.27 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "6ed0ee6f-9db4-4a3e-ba17-8cb284c528b1")
 		)
@@ -8954,6 +9008,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 176.53 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C307385"
+			(at 176.53 217.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9162,6 +9225,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C5407791"
+			(at 265.43 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "92663709-a360-40c7-a9f5-d2e206faddb9")
 		)
@@ -9213,7 +9285,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "ESP32_P4"
 			(at 229.87 98.9898 0)
 			(effects
 				(font
@@ -9241,6 +9313,15 @@
 		)
 		(property "Description" "High-performance MCU with one RISC-V 32-bit dual-core microprocessor and one single-core microprocessor"
 			(at 111.76 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C22387510"
+			(at 166.37 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9655,7 +9736,7 @@
 				)
 			)
 		)
-		(property "Value" "0,1uF"
+		(property "Value" "100nF"
 			(at 180.086 223.774 90)
 			(effects
 				(font
@@ -9683,6 +9764,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 176.53 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
+			(at 176.53 222.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10004,6 +10094,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C2682312"
+			(at 142.24 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -10487,6 +10586,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C3872637"
+			(at 151.13 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1625c68d-3ea4-4400-84da-08cbfd0b7acc")
 		)
@@ -10548,6 +10656,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 367.03 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 367.03 137.16 0)
 			(effects
 				(font
@@ -10684,6 +10801,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 137.16 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C98220"
 			(at 137.16 67.31 0)
 			(effects
 				(font
@@ -10886,6 +11012,15 @@
 			)
 		)
 		(property "Description" "High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 2A, SOT-23-5"
+			(at 303.53 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C141836"
 			(at 303.53 105.41 0)
 			(effects
 				(font
@@ -11105,6 +11240,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C14675"
+			(at 294.64 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84d82cdc-8cf8-479e-ba51-d3fb7134e294")
 		)
@@ -11298,6 +11442,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 121.92 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C668346"
 			(at 121.92 82.55 0)
 			(effects
 				(font
@@ -11507,6 +11660,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "0603"
+			(at 204.47 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a883e608-7846-40f1-b4ee-77fc84b01218")
 		)
@@ -11569,6 +11731,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 194.31 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "0603"
 			(at 194.31 210.82 0)
 			(effects
 				(font
@@ -11906,6 +12077,15 @@
 				(hide yes)
 			)
 		)
+		(property "LSCS Number" "C221676"
+			(at 374.65 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "3a741dfa-7a13-4b7b-b717-d9d46a3bba01")
 		)
@@ -11993,7 +12173,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_GND23")
+		(lib_id "Device:Crystal_GND24")
 		(at 148.59 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12035,7 +12215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Four pin crystal, GND on pins 2 and 3"
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 148.59 29.21 0)
 			(effects
 				(font
@@ -12112,6 +12292,15 @@
 			)
 		)
 		(property "Description" "Bidirectional  level-shifting voltage translator, TSSOP-20"
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C17206"
 			(at 237.49 63.5 0)
 			(effects
 				(font
