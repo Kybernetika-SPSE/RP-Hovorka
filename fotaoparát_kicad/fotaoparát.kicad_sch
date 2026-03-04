@@ -12189,7 +12189,7 @@
 				)
 			)
 		)
-		(property "Value" "Crystal_GND23"
+		(property "Value" "Crystal_GND24"
 			(at 162.306 30.48 0)
 			(effects
 				(font
@@ -12216,6 +12216,15 @@
 			)
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 148.59 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS Number" "C5544483"
 			(at 148.59 29.21 0)
 			(effects
 				(font
