@@ -22,7 +22,7 @@ Cíl je sestrojit fotoaparát, s rozhraním, volitelními funkcemi atd. atd. atd
 - Nastavení clony, iso a rychlosti závěrky
 - display, možná i periferie (blesk, mikrofon, reprák?...)
 - haha
-
+- jak vtipný by bylo kdybych tam dal DOOM? [kdybych fakt jo chtěl](https://github.com/alexkid77/ESP32P4DOOM)
 ---
 
 ## 🔴 Hardware TODO před výrobou
