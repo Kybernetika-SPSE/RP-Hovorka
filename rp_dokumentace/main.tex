@@ -14,6 +14,8 @@
 %\usepackage{fancybox} % umožňuje pokročilé rámečkování
 %\usepackage{index} % nutno použít v případě tvorby rejstříku balíčkem makeindex
 %\newindex{default}{idx}{ind}{Rejstřík} % zavádí rejstřík v případě použití balíku index
+\usepackage{longtable}
+\usepackage{array}
 \usepackage[formats]{listings}  % Balíček pro sazbu zdrojových textů
 
 
@@ -40,14 +42,18 @@
 \brokenpenalty=1000 % "síla" zákazu zlomu stránky za řádkem, který má na konci rozdělené slovo
 
 \pagenumbering{arabic} % číslování stránek arabskými číslicemi
-%\usepackage{fancyhdr} % Načte balíček pro pokročilé úpravy záhlaví a zápatí.
-%\pagestyle{fancy} % Nastavení stylu stránek na 'fancy'
-%\fancyhf{} % Vymazání aktuálního nastavení záhlaví a zápatí
-%\fancyfoot[R]{\thepage} % Nastavení čísel stránek vpravo dole (R - right)
-\makeatletter
-  \renewcommand{\ps@plain}{\renewcommand{\@oddfoot}{\hfill\thepage} % Číslo stránky zarovnáno vpravo v zápatí
-  \renewcommand{\@evenfoot}{\hfill\thepage} } % Pokud máte oboustranný dokument, zarovnání pro sudé stránky
-\makeatother
+\usepackage{fancyhdr} % Načte balíček pro pokročilé úpravy záhlaví a zápatí.
+\pagestyle{fancy} % Nastavení stylu stránek na 'fancy'
+\fancyhf{} % Vymazání aktuálního nastavení záhlaví a zápatí
+\fancyfoot[R]{\thepage} % Nastavení čísel stránek vpravo dole (R - right)
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
 \parindent=0pt % odsazení 1. řádku odstavce
 \parskip=12pt   % mezera mezi odstavci
 \usepackage[breaklinks=true,hypertexnames=false]{hyperref}  % Balíček 'hyperref' pro sazbu hypertextových odkazů. Hypertextové odkazy mohou obsahovat zalomení řádku. Názvy hypertext. odkazů budou tvořeny nezávisle na názvech TeXu.
@@ -132,6 +138,44 @@ V Plzni dne 30. 4. 2026 \hfill Podpis: ..........................
 \tableofcontents
 \thispagestyle{empty}
 
+%%%%%%%%%%%% Seznam zkratek %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\chapter*{Seznam zkratek}
+\addcontentsline{toc}{chapter}{Seznam zkratek}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.4}
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}p{6.3cm} >{\raggedright\arraybackslash}p{5.2cm}}
+
+\textbf{Zkratka} & \textbf{Anglicky} & \textbf{Česky} \\
+\endfirsthead
+\textbf{Zkratka} & \textbf{Anglicky} & \textbf{Česky} \\
+\endhead
+ADC & Analog-to-digital converter & analogově-digitální převodník \\
+AF & Autofocus & automatické ostření \\
+CSI & Camera Serial Interface & kamerové sériové rozhraní \\
+DRC & Design Rules Check & kontrola pravidel návrhu \\
+DSI & Display Serial Interface & zobrazovací sériové rozhraní \\
+DTR & Double Transfer Rate & přenos na obou hranách hodinového signálu \\
+ERC & Electrical Rules Check & kontrola elektrických pravidel \\
+ESP-IDF & Espressif IoT Development Framework & vývojový rámec pro čipy ESP od společnosti Espressif \\
+ESD & Electrostatic discharge & elektrostatický výboj \\
+GPIO & General-purpose input/output & univerzální vstup/výstup \\
+I2C & Inter-Integrated Circuit & dvouvodičová sériová sběrnice \\
+NOR & NOR flash & typ nevolatilní flash paměti \\
+ISO & International Organization for Standardization & citlivost podle fotografické terminologie \\
+MILC & Mirrorless interchangeable-lens camera & bezzrcadlový fotoaparát s výměnnými objektivy \\
+MCU & Microcontroller unit & mikrokontrolér \\
+MIPI & Mobile Industry Processor Interface & standard mobilního rozhraní pro periférie \\
+PCB & Printed circuit board & plošný spoj \\
+QSPI & Quad Serial Peripheral Interface & čtyřlinkové sériové periferní rozhraní \\
+SD & Secure Digital & paměťová karta Secure Digital \\
+SPI & Serial Peripheral Interface & sériové periferní rozhraní \\
+USB & Universal Serial Bus & univerzální sériová sběrnice \\
+\caption{Seznam zkratek}
+\end{longtable}
+\endgroup
+
 %--------------------------------------------------------
 %|         Zde začíná SAMOTNÁ PRÁCE (text)              |
 %--------------------------------------------------------
@@ -202,30 +246,27 @@ Kvůli vysoké výpočetní náročnosti zpracování dat, která představuje j
 
 ESP32-P4 je vybaven vícejádrovou architekturou, která umožňuje paralelní zpracování úloh, což je klíčové zejména při práci s obrazovými daty. Dále disponuje hardwarovou akcelerací pro vybrané operace, dostatečnou kapacitou paměti a podporou vysokorychlostních rozhraní, která umožňují efektivní přenos dat z kamerových modulů.
 
-Významnou výhodou této platformy je také široká softwarová podpora a integrace s vývojovým prostředím ESP-IDF, které poskytuje potřebné nástroje pro optimalizaci výkonu a správu systémových prostředků. Díky tomu je možné implementovat i relativně složité algoritmy z oblasti zpracování obrazu přímo na úrovni mikrokontroléru.
 \section{Flash paměť}
 Další důležitou součástí návrhu je externí flash paměť. Mikrokontrolér ESP32-P4 totiž nedisponuje dostatečně velkou interní pamětí pro uložení uživatelského kódu, a proto je nutné využít externí úložiště.
 
 V tomto projektu byla zvolena paměť W25Q256JV-DTR od společnosti Winbond. Jedná se o sériovou NOR flash paměť s kapacitou 256 Mbit (32 MB), která slouží pro ukládání firmwaru, konfiguračních dat a případně i dočasných obrazových dat.
 
-Paměť komunikuje s mikrokontrolérem prostřednictvím rozhraní SPI, respektive jeho rozšířené varianty QSPI, která umožňuje paralelní přenos dat po více datových linkách. Díky tomu lze dosáhnout výrazně vyšších přenosových rychlostí oproti standardnímu SPI, což je zásadní zejména při práci s většími objemy dat, například obrazovými snímky.
+Paměť komunikuje s mikrokontrolérem prostřednictvím rozhraní SPI, respektive jeho rozšířené varianty QSPI, která umožňuje paralelní přenos dat po více datových linkách. Díky tomu lze dosáhnout výrazně vyšších přenosových rychlostí oproti standardnímu SPI, což je zásadní zejména při práci s obrazovými snímky.
 
 Označení DTR (Double Transfer Rate) znamená, že data jsou přenášena na obou hranách hodinového signálu, čímž dochází k efektivnímu zdvojnásobení propustnosti bez nutnosti zvyšování pracovní frekvence. Tato vlastnost přispívá ke zvýšení celkového výkonu systému při čtení i zápisu dat.
 
 Paměť je organizována do sektorů, což umožňuje efektivní mazání a zápis po blocích. Zároveň podporuje mechanismy ochrany vybraných oblastí proti zápisu, což je výhodné například pro zabezpečení kritických částí firmwaru.
-
-Díky své kapacitě a rychlosti představuje tato paměť vhodné řešení pro aplikace, kde interní paměť mikrokontroléru nepostačuje a kde je nutné pracovat s větším objemem dat při zachování relativně vysoké přenosové rychlosti.
 \section{Kamerový modul}
 Další klíčovou komponentou je kamerový modul Arducam IMX219 s rozlišením 8 Mpx. Tento modul byl zvolen nejen s ohledem na příznivý poměr ceny a výkonu, ale také díky své kompatibilitě a vhodnosti pro použití s mikrokontrolérem ESP32-P4.
 
-ESP32-P4 disponuje rozhraním DSI/CSI, které umožňuje vysokorychlostní přenos obrazových dat mezi kamerovým modulem, případně displejem, a samotným mikrokontrolérem. Využití tohoto rozhraní je zásadní zejména při práci s obrazem ve vyšším rozlišení, kde by standardní paralelní nebo sériová rozhraní představovala významné omezení.
+ESP32-P4 disponuje rozhraním DSI/CSI, které umožňuje vysokorychlostní přenos obrazových dat mezi kamerovým modulem, případně displejem, a samotným mikrokontrolérem. Využití tohoto rozhraní je zásadní zejména při práci s obrazem ve vyšším rozlišení, kde by standardní paralelní nebo sériová rozhraní představovala významné omezení, kvůli nadměrnému užívaní GPIO, které by nemuseli vystačit.
 
-Samotný snímač IMX219 nabízí dostatečné rozlišení pro zamýšlenou aplikaci a zároveň podporuje různé režimy výstupu, což umožňuje optimalizovat kompromis mezi kvalitou obrazu a objemem přenášených dat. Díky tomu lze přizpůsobit parametry snímání aktuálním výpočetním možnostem systému.
+Samotný snímač IMX219 nabízí dostatečné rozlišení pro zamýšlenou aplikaci a zároveň podporuje různé režimy výstupu, což umožňuje optimalizovat kompromis mezi kvalitou obrazu a objemem přenášených dat. V jednoduchosti můžeme poté přímo ve Fotaoparátu nastavovat rozlišení výstupního snímku.
 
-Výhodou modulu Arducam je také jeho široká podpora a dostupná dokumentace, což usnadňuje jeho integraci do návrhu jak na hardwarové, tak i softwarové úrovni. Modul komunikuje prostřednictvím standardizovaného rozhraní, což zjednodušuje jeho zapojení i konfiguraci.
+Výhodou modulu Arducam je také jeho široká podpora a dostupná dokumentace, což usnadňuje jeho integraci do návrhu jak na hardwarové, tak i softwarové úrovni.
 
 \section{Display}
-Pro zobrazovací jednotku jsem zvolil 2,8palcový LCD modul od společnosti Waveshare, a to především díky jeho DSI rozhraní, které je podporováno mikrokontrolérem ESP32-P4. Toto rozhraní umožňuje efektivní a rychlou komunikaci mezi řídicí jednotkou a displejem.
+Pro zobrazovací jednotku jsem zvolil 2,8"~LCD modul od společnosti Waveshare, a to především díky jeho DSI rozhraní, které je podporováno mikrokontrolérem ESP32-P4. Toto rozhraní umožňuje efektivní a rychlou komunikaci mezi řídicí jednotkou a displejem.
 
 Dalším důvodem výběru tohoto konkrétního displeje byla jeho kompatibilita s mechanickou konstrukcí zařízení. Pro zjednodušení návrhu jsem se rozhodl využít tělo fotoaparátu Canon 550D. Pro účely této kapitoly postačí uvést, že původní displej z modelu 550D není vhodné použít, jelikož k němu není veřejně dostupná dostatečná technická dokumentace. Zároveň má však velmi podobné rozměry jako zvolený Waveshare modul, což usnadňuje jeho náhradu bez nutnosti zásadních mechanických úprav.
 
@@ -236,8 +277,6 @@ Pro ukládání dat bude použit konektor pro SD kartu, což představuje standa
 Alternativou by mohlo být použití paměťových karet typu CompactFlash. Tyto karty sice teoreticky dosahují vyšších přenosových rychlostí, mimo jiné díky většímu počtu pinů, avšak jejich nevýhodou je vyšší pořizovací cena. Dalším omezením je skutečnost, že konektory pro CompactFlash karty jsou v současnosti obtížně dostupné a často vyžadují použití redukce. Z těchto důvodů nebylo toto řešení dále uvažováno.
 \section{Konektor pro komunikaci s počítačem.}
 Pro nahrávání firmwaru je na desce navržen USB-C konektor, který slouží nejen pro samotné programování mikrokontroléru, ale také pro jeho napájení během vývoje a testování. Toto řešení výrazně zjednodušuje proces nasazení firmwaru, protože není nutné využívat externí programátor.
-
-Rozhraní USB je implementováno s ohledem na maximální kompatibilitu s běžně dostupnými nástroji a vývojovými prostředími. Díky tomu je možné firmware nahrávat přímo z vývojového prostředí prostřednictvím standardního USB připojení, což urychluje celý vývojový cyklus.
 \chapter{Podrobné zapojení na desce}
 \section{MCU}
 Středem celého návrhu je mikrokontrolér ESP32-P4, osazený jako hlavní výpočetní a řídicí prvek. V zapojení jsou využity jeho vysokorychlostní periferie (MIPI CSI/DSI, USB a rozhraní pro externí flash), zatímco běžné vstupy a výstupy obsluhují ovládací prvky a pomocné funkce.
@@ -255,16 +294,49 @@ Podrobnější informace o doporučeném zapojení napájecích domén a startov
 
 
 \section{Napájení periférií}
-Napájecí část je navržena pro provoz z jednoho akumulátoru 7,2 V a je rozdělena do několika samostatných větví podle typu zátěže\cite{local_readme}. Ve schématu jsou osazeny měniče CONV1 (AP63203WU, pevný výstup 3,3 V), CONV2 (AP63200WU) a CONV4 (AP63200WU)\cite{ap63200,local_kicad}.
+Napájecí část je navržena pro provoz z jednoho akumulátoru 7,2 V a je rozdělena do několika samostatných větví podle typu zátěže\cite{local_readme}. Ve schématu jsou osazeny měniče CONV1 (AP63203WU, pevný výstup 3,3 V), CONV2 (AP63200WU, nastavený na 5,5 V pro komunikaci s objektivem) a CONV4 (AP63200WU, nastavený na 6 V pro obsluhu servo motorů v objektivu)\cite{ap63200,local_kicad}.
 
-U měniče CONV1 je osazena výkonová tlumivka L1 (3,9 $\mu$H), vstupní a výstupní filtrační kondenzátory C7 (10 $\mu$F), C10 (22 $\mu$F), C44 (10 $\mu$F), C46 (22 $\mu$F), C48 (100 nF) a C52 (22 $\mu$F), dále ochranná zenerova dioda D6 (3,6 V). USB část je doplněna konfiguračním rezistorem R1 (5,1 k$\Omega$) a ESD ochranou ESDA6V1U1RL\cite{local_kicad,esda6v1,usb_typec}.
+Měnič CONV1 s obvodem AP63203WU vytváří hlavní větev 3,3 V. Na jeho vstupu jsou oddělovací diody D1 a D4, které umožňují napájení jak z větve +7V2 z akumulátoru, tak z USB +5V. Na vstupu jsou také kondenzátory C6 (100 nF) a C7 (10 $\mu$F), na výstupu pak C9 a C10 (oba 22 $\mu$F), tlumivka L1 (3,9 $\mu$H), bootstrap kondenzátor C8 (100 nF) a zenerova dioda D6 (3,6 V). Toto řešení je uvedeno na obrázku~\ref{fig:3v3cascade}. Díky němu může zařízení v omezeném režimu běžet i pouze z USB, ale bez napájení a bez komunikace objektivu nebude dostupné nastavování clony ani autofocus.
 
-U měničů AP63200WU jsou osazeny lokální blokovací a filtrační kondenzátory C16, C17, C19, C21, C22, C32 a C36 (100 nF), dále C25 (1 $\mu$F), C33 (10 $\mu$F) a C34 (10 $\mu$F). V regulační části je použit odporový dělič s R6 (16 k$\Omega$)\cite{local_kicad}. Toto osazení omezuje přenos rušení do citlivých částí systému, zejména kamery, flash paměti a USB.
+Měnič CONV2 s obvodem AP63200WU je nastaven na výstup 5,5 V pro napájení logiky objektivu. Na vstupu jsou kondenzátory C43 (100 nF) a C44 (10 $\mu$F), na výstupu tlumivka L3 (10 $\mu$H), kondenzátory C46 a C47 (oba 22 $\mu$F), bootstrap kondenzátor C45 (100 nF) a zenerova dioda D2 (5,7 V). Rezistory pro nastavení výstupního napětí jsou vybrány podle rovnice~\ref{nastavenimenice} poskytnuté výrobcem:
+\begin{equation}
+R_{1} = R_{2} \cdot \left(\frac{V_{OUT}}{0.8V}-1 \right)
+\label{nastavenimenice}
+\end{equation}
+Toto zapojení je zachyceno na obrázku~\ref{fig:lenslogic}.
 
+Měnič CONV4 (AP63200WU) je v zapojení použit jako samostatná větev pro napájení hlavních pohonů v objektivu, s výstupním napětím cca 6 V. Na vstupu (síť +7V2) jsou kondenzátory C48 (100 nF) a C49 (10 $\mu$F) pro odrušení; spínací stupeň používá bootstrap kondenzátor C50 (100 nF) a za ním následuje tlumivka L4 (10 $\mu$H). Výstupní filtrace tvoří kondenzátory C51 a C52 (oba 22 $\mu$F). Nastavení výstupního napětí realizuje dělič R7/R6 (R7 = 100 k$\Omega$ na výstupu, R6 = 16 k$\Omega$ k zemi), čímž se dosahuje cílové hodnoty~6 V. Pro finální vyhlazení je zapojena zenerova dioda D3 (6,2 V). Toto zapojení je zobrazeno na obrázku~\ref{fig:lensmainpower}.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{pictures/3V3cascade.png}
+    \caption{Měnič na 3,3 V v eschématu \textit{[Zdroj: Vlastní]}}
+    \label{fig:3v3cascade}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{pictures/lenslogicpower.png}
+    \caption{Zapojení měniče napětí pro komunikaci s objektivem \textit{[Zdroj: Vlastní]}}
+    \label{fig:lenslogic}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{pictures/lensmainpower.png}
+    \caption{Zapojení měniče napětí pro obsluhu servo motorů v objektivu \textit{[Zdroj: Vlastní]}}
+    \label{fig:lensmainpower}
+\end{figure}
 \section{Externí Flash paměť}
+
 Externí flash paměť je osazena jako samostatný nevolatilní prostor pro firmware a provozní data\cite{w25q256,local_kicad}. Připojení je řešeno přes QSPI, aby byla zajištěna dostatečná propustnost při startu systému i při běhu aplikace.
 
-Ve schématu je osazena paměť ESP\_FLASH1 typu W25Q256JVEIQ. Stabilitu této části zajišťuje zejména lokální blokování napájení a krátké návratové cesty do země, které minimalizují rušení na hodinové a datových linkách\cite{local_kicad,esp32p4_trm}.
+Ve schématu je osazena paměť ESP\_FLASH1 typu W25Q256JVEIQ. Stabilitu této části zajišťuje zejména důraz na velmi nízké odchylky mezi jednotlivými cestami. To je důležité zejména kvůli vysokým přenosovým rychlostem. Schéma zapojení a n8vrh routování této části jsou zobrazeny na obrázku~\ref{fig:flash}. Všimněte si, že všechny cesty jsou vedeny v jedné vrstvě, jsou co nejkratší a mají stejné délky vyladěné pomocí tzv. „meandrů“ . Díky tomu je minimalizováno riziko ztráty dat kvůli rušení nebo odrazům signálu.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/flash.png}
+    \includegraphics[width=0.7\linewidth]{pictures/flashpcb.png}
+    \caption{Zapojení externí flash paměti v eschématu a v PCB editoru. \textit{[Zdroj: Vlastní]}}
+    \label{fig:flash}
+\end{figure}
+
 
 \section{Konektor pro zapojení kamerového modulu}
 Kamerový modul je připojen přes 15pinový FFC konektor. Vedeny jsou diferenciální páry MIPI CSI, řídicí sběrnice I2C, napájení a řídicí signály pro zapnutí modulu\cite{local_kicad,esp32p4_ds}.
@@ -344,7 +416,7 @@ V kombinaci s nativní podporou USB v ESP32-P4 toto řešení výrazně zjednodu
 
 \bibitem{txs0108e} TEXAS INSTRUMENTS. \textit{TXS0108E -- 8-Bit Bidirectional Voltage-Level Translator}. Dostupné z: \url{https://www.ti.com/lit/ds/symlink/txs0108e.pdf}. [cit. 2026-04-23].
 
-\bibitem{canon_ef_notes} HOVORKA, V. \textit{software/canon-ef-protocol-notes.md}. Lokální projektová poznámka (reverse engineering EF sběrnice), 2026.
+\bibitem{canon_ef_notes} HECTOR, M. \textit{software/canon-ef-protocol-notes.md}. Dostupné z: \url{https://gist.github.com/marcan/858c242db2fc595da1e0bb70a05192fc#file-canon-ef-protocol-notes-md} (reverse engineering EF sběrnice), 2026.
 
 \bibitem{magic_lantern} MAGIC LANTERN TEAM. \textit{Magic Lantern}. Dostupné z: \url{https://www.magiclantern.fm}. [cit. 2026-04-23].
 

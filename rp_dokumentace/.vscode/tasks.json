@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build LaTeX (pdflatex)",
+      "type": "shell",
+      "command": "build_pdf.bat",
+      "options": {
+        "cwd": "${workspaceFolder}/rp_dokumentace"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
