@@ -1,0 +1,13 @@
+# KiCad cache directories
+.history/
+.history_trim/
+
+# LaTeX artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Backup files
+*-backups/
