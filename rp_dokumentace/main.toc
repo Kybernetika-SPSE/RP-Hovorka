@@ -17,16 +17,16 @@
 \contentsline {section}{\numberline {3.6}Konektor pro komunikaci s počítačem.}{16}{section.22}%
 \contentsline {chapter}{\numberline {4}Podrobné zapojení na desce}{17}{chapter.23}%
 \contentsline {section}{\numberline {4.1}MCU}{17}{section.24}%
-\contentsline {section}{\numberline {4.2}Napájení periférií}{17}{section.26}%
-\contentsline {section}{\numberline {4.3}Externí Flash paměť}{19}{section.31}%
-\contentsline {section}{\numberline {4.4}Konektor pro zapojení kamerového modulu}{22}{section.33}%
-\contentsline {section}{\numberline {4.5}Konektor pro zapojení displaye}{22}{section.34}%
-\contentsline {section}{\numberline {4.6}Dock pro umístění SD karty}{22}{section.35}%
-\contentsline {section}{\numberline {4.7}Externí krystal}{23}{section.36}%
-\contentsline {section}{\numberline {4.8}Převodník logických úrovní pro komunikaci s objektivem}{23}{section.37}%
-\contentsline {section}{\numberline {4.9}Napájení interní SRAM paměti}{23}{section.38}%
-\contentsline {section}{\numberline {4.10}USB-C USB 2.0 konektor}{24}{section.39}%
-\contentsline {chapter}{\numberline {5}Plánované oživení}{25}{chapter.40}%
-\contentsline {chapter}{\numberline {6}Plánovaná konstrukce}{26}{chapter.41}%
-\contentsline {chapter}{Literatura}{27}{chapter*.42}%
-\contentsline {chapter}{Přílohy}{I}{chapter*.43}%
+\contentsline {section}{\numberline {4.2}Napájení periférií}{17}{section.27}%
+\contentsline {section}{\numberline {4.3}Externí Flash paměť}{19}{section.32}%
+\contentsline {section}{\numberline {4.4}Konektor pro zapojení kamerového modulu}{21}{section.34}%
+\contentsline {section}{\numberline {4.5}Konektor pro zapojení displaye}{23}{section.35}%
+\contentsline {section}{\numberline {4.6}Dock pro umístění SD karty}{23}{section.36}%
+\contentsline {section}{\numberline {4.7}Externí krystal}{23}{section.37}%
+\contentsline {section}{\numberline {4.8}Převodník logických úrovní pro komunikaci s objektivem}{24}{section.38}%
+\contentsline {section}{\numberline {4.9}Napájení interní SRAM paměti}{24}{section.39}%
+\contentsline {section}{\numberline {4.10}USB-C USB 2.0 konektor}{24}{section.40}%
+\contentsline {chapter}{\numberline {5}Plánované oživení}{26}{chapter.41}%
+\contentsline {chapter}{\numberline {6}Plánovaná konstrukce}{27}{chapter.42}%
+\contentsline {chapter}{Literatura}{28}{chapter*.43}%
+\contentsline {chapter}{Přílohy}{I}{chapter*.44}%

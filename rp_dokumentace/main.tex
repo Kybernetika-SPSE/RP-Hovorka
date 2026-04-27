@@ -286,8 +286,13 @@ Středem celého návrhu je mikrokontrolér ESP32-P4, osazený jako hlavní výp
     \caption{ESP32-P4 v eschématu \textit{[Zdroj: Vlastní]}}
     \label{fig:esp32p4}
 \end{figure} 
-Sám o sobě ale být použit nemůže. Pro jeho ideální funkci je potřeba externí flash pamět, externí krystal a externí buck converter na (doplinit voltage) pro napájení high power pinů. 
-
+Sám o sobě ale být použit nemůže. Pro jeho ideální funkci je potřeba externí flash pamět, externí krystal a externí buck converter na 1,1 V pro napájení high power pinů. 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/hpbuck.png}
+    \caption{Schména zapojení měniče pro napájení HP pinů \textit{[Zdroj: Vlastní]}}
+    \label{fig:hpbuck}
+\end{figure}
 Programování zařízení je v tomto projektu navrženo pouze přes USB. Mikrokontrolér sice obecně umožňuje i programování přes UART, tato možnost však v daném návrhu není využita.
 
 Podrobnější informace o doporučeném zapojení napájecích domén a startovacích podmínkách uvádí datasheet a technický referenční manuál výrobce.
@@ -305,7 +310,7 @@ R_{1} = R_{2} \cdot \left(\frac{V_{OUT}}{0.8V}-1 \right)
 \end{equation}
 Toto zapojení je zachyceno na obrázku~\ref{fig:lenslogic}.
 
-Měnič CONV4 (AP63200WU) je v zapojení použit jako samostatná větev pro napájení hlavních pohonů v objektivu, s výstupním napětím cca 6 V. Na vstupu (síť +7V2) jsou kondenzátory C48 (100 nF) a C49 (10 $\mu$F) pro odrušení; spínací stupeň používá bootstrap kondenzátor C50 (100 nF) a za ním následuje tlumivka L4 (10 $\mu$H). Výstupní filtrace tvoří kondenzátory C51 a C52 (oba 22 $\mu$F). Nastavení výstupního napětí realizuje dělič R7/R6 (R7 = 100 k$\Omega$ na výstupu, R6 = 16 k$\Omega$ k zemi), čímž se dosahuje cílové hodnoty~6 V. Pro finální vyhlazení je zapojena zenerova dioda D3 (6,2 V). Toto zapojení je zobrazeno na obrázku~\ref{fig:lensmainpower}.
+Měnič CONV4 (AP63200WU) je v zapojení použit jako samostatná větev pro napájení hlavních pohonů v objektivu, s výstupním napětím cca 6 V. Na vstupu (síť +7V2) jsou kondenzátory C48 (100 nF) a C49 (10 $\mu$F) pro odrušení; spínací stupeň používá bootstrap kondenzátor C50 (100 nF) a za ním následuje tlumivka L4 (10 $\mu$H). Výstupní filtrace tvoří kondenzátory C51 a C52 (oba 22 $\mu$F). Nastavení výstupního napětí realizuje dělič R7/R6 (R7 = 100 k$\Omega$ na výstupu, R6 = 16 k$\Omega$ k zemi) osazený podle rovnice \ref{nastavenimenice}, čímž se dosahuje cílové hodnoty~6 V. Pro finální vyhlazení je zapojena zenerova dioda D3 (6,2 V). Toto zapojení je zobrazeno na obrázku~\ref{fig:lensmainpower}.
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{pictures/3V3cascade.png}
