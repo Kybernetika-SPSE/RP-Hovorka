@@ -3,8 +3,6 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
-        "apply_defaults_to_fp_barcodes": false,
-        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -145,7 +143,6 @@
         "extra_footprint": "warning",
         "footprint": "warning",
         "footprint_filters_mismatch": "ignore",
-        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "warning",
         "hole_clearance": "warning",
@@ -163,7 +160,6 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
-        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "warning",
@@ -184,13 +180,10 @@
         "too_many_vias": "warning",
         "track_angle": "error",
         "track_dangling": "warning",
-        "track_not_centered_on_via": "ignore",
-        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "warning",
         "track_width_out_of_range": "warning",
         "tracks_crossing": "error",
-        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "warning",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -874,16 +867,16 @@
       {
         "filename": "fotaoparát.kicad_sch",
         "name": "fotaoparát",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "0ab33720-0b6a-449c-80c0-2b7abe4d9450"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J6,#PWR32",
     "variants": []
   },
   "sheets": [
     [
       "0ab33720-0b6a-449c-80c0-2b7abe4d9450",
-      "Root"
+      "fotaoparát"
     ],
     [
       "04ebdae2-67d7-4749-bd3e-f9c05089f6fb",
