@@ -1,4 +1,4 @@
-    \documentclass[12pt, a4paper, oneside]{report}             
+\documentclass[12pt, a4paper, oneside]{report}             
 \usepackage[czech]{babel}
 \usepackage[utf8]{inputenc}  
 \usepackage{graphicx} % balíček pro vkládání RASTROVÝCH grafických souborů (PNG apod.)
@@ -244,7 +244,7 @@ V mé práci jsem VS používal zejména pro jednoduché commitování. Dále js
 \section{MCU}
 Kvůli vysoké výpočetní náročnosti zpracování dat, která představuje jediný snímek o rozlišení 8 Mpx, bylo nutné zvolit jeden z nejvýkonnějších mikrokontrolérů dostupných v době realizace projektu — ESP32-P4. Jedná se o moderní MCU navržené s důrazem na vysoký výpočetní výkon, multimediální zpracování a efektivní práci s periferiemi.
 
-ESP32-P4 je vybaven vícejádrovou architekturou, která umožňuje paralelní zpracování úloh, což je klíčové zejména při práci s obrazovými daty. Dále disponuje hardwarovou akcelerací pro vybrané operace, dostatečnou kapacitou paměti a podporou vysokorychlostních rozhraní, která umožňují efektivní přenos dat z kamerových modulů.
+ESP32-P4 je vybaven vícejádrovou architekturou, která umožňuje paralelní zpracování úloh, což je klíčové zejména při práci s obrazovými daty. Dále disponuje hardwarovou akcelerací pro vybrané operace, dostatečnou kapacitou paměti a podporou vysokorychlostních rozhraní CSI, DSI a QSPI která umožňují efektivní přenos dat z kamerových modulů.
 
 \section{Flash paměť}
 Další důležitou součástí návrhu je externí flash paměť. Mikrokontrolér ESP32-P4 totiž nedisponuje dostatečně velkou interní pamětí pro uložení uživatelského kódu, a proto je nutné využít externí úložiště.
@@ -286,9 +286,20 @@ Středem celého návrhu je mikrokontrolér ESP32-P4, osazený jako hlavní výp
     \caption{ESP32-P4 v eschématu \textit{[Zdroj: Vlastní]}}
     \label{fig:esp32p4}
 \end{figure} 
-Sám o sobě ale být použit nemůže. Pro jeho ideální funkci je potřeba externí flash pamět, externí krystal a externí buck converter na (doplinit voltage) pro napájení high power pinů. 
+Sám o sobě ale být použit nemůže. Pro jeho správnou funkci je potřeba externí flash pamět, externí krystal a samostatně řešené napájení jednotlivých domén, včetně větve pro high-power piny. Bez správného napájení a startovacích podmínek může čip sice být osazený, ale zařízení se po zapnutí nemusí vůbec spolehlivě rozběhnout.
 
 Programování zařízení je v tomto projektu navrženo pouze přes USB. Mikrokontrolér sice obecně umožňuje i programování přes UART, tato možnost však v daném návrhu není využita.
+
+Na obrázku~\ref{fig:i2c_bootstrappy} je zachycena nejdůležitější podpůrná část okolo ESP32-P4. Je na ní vidět dvojice pull-up rezistorů pro sběrnici I2C, protože tato sběrnice je otevřenokolektorová a bez externího přitažení na 3,3 V by se signály nevytvářely správně. Dále je zde resetovací tlačítko a kapacita pro filtraci stisku, takže reset není jen „kontakt na zem“, ale krátký a stabilní impuls bez falešných přechodů.
+
+Stejně důležitá je i pravá část obrázku, kde jsou zakreslené startovací a strapping vazby. Ty určují, v jakém režimu čip po zapnutí naběhne, a proto musí být v klidovém stavu jednoznačně definované. Pokud by byly ponechané bez pull-upů nebo pull-downů, mohl by se procesor po resetu chovat nespolehlivě, bootovat do nesprávného režimu nebo vůbec nenastartovat.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\linewidth]{pictures/i2c_bootstrappy_.png}
+    \caption{Kritické pomocné zapojení kolem ESP32-P4: I2C pull-upy, reset a startovací vazby. \textit{[Zdroj: Vlastní]}}
+    \label{fig:i2c_bootstrappy}
+\end{figure}
 
 Podrobnější informace o doporučeném zapojení napájecích domén a startovacích podmínkách uvádí datasheet a technický referenční manuál výrobce.
 
@@ -339,31 +350,54 @@ Ve schématu je osazena paměť ESP\_FLASH1 typu W25Q256JVEIQ. Stabilitu této �
 
 
 \section{Konektor pro zapojení kamerového modulu}
-Kamerový modul je připojen přes 15pinový FFC konektor. Vedeny jsou diferenciální páry MIPI CSI, řídicí sběrnice I2C, napájení a řídicí signály pro zapnutí modulu\cite{local_kicad,esp32p4_ds}.
+Kamerový modul je připojen přes 15pinový FFC konektor. Vedeny jsou diferenciální páry MIPI CSI, řídicí sběrnice I2C, napájení a řídicí signály pro zapnutí modulu. Stejně jako u Flash paměti je důležité dbát na symetrii délek cest a jejich tvar pro zabránění rušení.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/kamera.png}
+    \caption{Zapojení konektoru pro připojení kamerového modulu IMX219. \textit{[Zdroj: Vlastní]}}
+\end{figure}
 
-Z pohledu osazení jsou důležité zejména podpůrné prvky na řídicí sběrnici a napájení: pull-up rezistory R13 (4,7 k$\Omega$) a R11 (10 k$\Omega$), doplněné o lokální filtrační kondenzátory napájecí větve. Právě tyto součástky mají přímý vliv na spolehlivou inicializaci kamery po zapnutí\cite{local_kicad,local_readme}.
-
-Text této části je záměrně veden obecně na úrovni použitého rozhraní a zapojení. Konkrétní parametry obrazového snímače je vždy nutné vztáhnout k reálně osazenému kamerovému modulu.
+Text této části je záměrně veden obecně na úrovni použitého rozhraní a zapojení. Konkrétní parametry obrazového snímače je vždy nutné vztáhnout k reálně osazenému kamerovému modulu. Je tedy možné použít kamerový modul s stjným pinoutem, ale s jinými parametry, a to i bez nutnosti úprav v zapojení. Naopak použití modulu s jiným pinoutem by vyžadovalo zásadní úpravy v zapojení i v softwaru.
 
 \section{Konektor pro zapojení displaye}
-Displej je připojen přes samostatný 15pinový FFC konektor. Na tomto rozhraní jsou vyvedeny MIPI DSI páry pro obrazová data a pomocné signály pro obsluhu dotykové vrstvy\cite{local_kicad,waveshare}.
+Displej je připojen přes samostatný 15pinový FFC konektor. Na tomto rozhraní jsou vyvedeny MIPI DSI páry pro obrazová data a pomocné signály I2C pro obsluhu dotykové vrstvy\cite{local_kicad,waveshare}.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/display.png}
+    \caption{Zapojení konektoru pro připojení displeje v eschématu. \textit{[Zdroj: Vlastní]}}
+\end{figure}
 
-Podpůrné osazení zahrnuje především stabilní napájení panelu a dotykového obvodu, lokální blokování a odpovídající připojení řídicích linek. U dotykové části je zásadní správné zapojení I2C komunikace, aby nedocházelo k výpadkům při současné aktivitě displeje a kamerové větve.
-
+I zde je nutné dbát na délkovou symetrii cest a jejich tvar, aby se minimalizovalo rušení a ztráta dat při přenosu obrazových informací.
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{pictures/pcbdsiacam.png}
+    \caption{Návrh pro zapojení konektoru pro připojení kamery (vlevo) a displaye (vpravo). \textit{[Zdroj: Vlastní]}}
+\end{figure}
 \section{Dock pro umístění SD karty}
 Pro ukládání snímků je osazen konektor pro MicroSD kartu\cite{local_kicad}. Kromě datových linek je využita i detekce vložení karty, což zjednodušuje obsluhu v softwaru a snižuje riziko zápisu na neosazené médium.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/sdkarta.png}
+    \caption{Zapojení slotu pro SD kartu v eschématu. \textit{[Zdroj: Vlastní]}}
+\end{figure}
 
-V okolí tohoto konektoru jsou důležité ochranné a podpůrné prvky: ESD ochrana datových linek, filtrace napájení karty a krátké návratové cesty do země\cite{esda6v1}. Protože jde o často připojované uživatelské rozhraní, je tato část klíčová pro dlouhodobou spolehlivost zařízení.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TOHLE K MCU
 \section{Externí krystal}
 Hodinový systém je doplněn externím 40MHz krystalem a dvojicí zátěžových kondenzátorů podle doporučení výrobce\cite{local_kicad,esp32p4_ds}. Tato část má přímý vliv na stabilní start systému i na přesnost časování vysokorychlostních periferií.
-
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/xtal.png}
+    \caption{Zapojení externího krystalu v eschématu. \textit{[Zdroj: Vlastní]}}
+\end{figure}
 Z hlediska osazení i návrhu je důležité držet krystal i jeho pasivní síť co nejblíže mikrokontroléru, použít krátké propoje a neprotahovat v okolí rušivé datové linky\cite{esp32p4_trm}.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TOHLE K MCU
 \section{Převodník logických úrovní pro komunikaci s objektivem}
 Pro komunikaci s objektivem Canon EF je osazen obousměrný převodník logických úrovní TXS0108EPW\cite{txs0108e,canon_ef_notes}. Důvodem je rozdíl mezi logikou mikrokontroléru a úrovněmi na straně objektivu.
-
-Podpůrné součástky v této části zahrnují zejména správné napájení obou domén převodníku, blokovací kondenzátory C53 až C56 a C60 až C61 (100 nF) a korektní aktivaci pinu OE přes rezistor R8 (10 k$\Omega$). Bez těchto prvků může být komunikace nestabilní i při správné implementaci protokolu ve firmwaru\cite{local_kicad}.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/prevodniklogurovni.png}
+    \caption{Zapojení převodníku logických úrovní pro komunikaci s objektivem v eschématu. \textit{[Zdroj: Vlastní]}}   
+\end{figure}
 
 Z dostupných měření vyplývá, že část EF signálů není spolehlivá při 3,3V úrovni, proto je oddělení napěťových domén v této části nezbytné\cite{canon_ef_notes,magic_lantern}.
 
@@ -374,8 +408,11 @@ V praxi to znamená důsledné osazení blokovacích kondenzátorů v bezprostř
 
 \section{USB-C USB 2.0 konektor}
 Datové a servisní rozhraní je řešeno přes USB-C v režimu USB 2.0\cite{local_kicad,usb_typec}. Rozhraní je použito pro programování firmware, ladění i napájení během vývoje.
-
-Podpůrné osazení USB části je zásadní: správné zapojení konfiguračních pinů konektoru, ESD ochrana datových linek a kvalitní lokální blokování napájení\cite{esda6v1}. Právě tyto prvky rozhodují o odolnosti proti výbojům při připojování kabelu a o stabilitě komunikace.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/usb-c.png}
+    \caption{Zapojení USB-C konektoru v eschématu. \textit{[Zdroj: Vlastní]}}
+\end{figure}
 
 V kombinaci s nativní podporou USB v ESP32-P4 toto řešení výrazně zjednodušuje oživení i další vývoj\cite{esp32p4_ds,esp32p4_web}.
 
