@@ -7929,16 +7929,6 @@
 		)
 		(uuid "538457d2-354b-45cb-997c-231c3d129874")
 	)
-	(label "USB_DATA_N"
-		(at 190.5 194.31 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5c0fe5b2-db32-4b9d-8f21-3d8956a7e01d")
-	)
 	(label "XTAL_P"
 		(at 72.39 33.02 180)
 		(effects
@@ -8409,16 +8399,6 @@
 		)
 		(uuid "f3e0fbd1-1d43-4056-9fea-4931d6cce974")
 	)
-	(label "USB_DATA_P"
-		(at 193.04 194.31 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fdf12d95-8922-4034-9b25-b2c5b8fcbf6f")
-	)
 	(global_label "DSI_DATAP0"
 		(shape input)
 		(at 165.1 194.31 270)
@@ -8779,6 +8759,28 @@
 			)
 		)
 	)
+	(global_label "USB_DATA_N"
+		(shape input)
+		(at 190.5 194.31 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45ea921c-d29b-49e3-9465-5213cc5c3bbc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.5 208.7857 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DSI_CLKN"
 		(shape input)
 		(at 160.02 194.31 270)
@@ -8992,6 +8994,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "USB_DATA_P"
+		(shape input)
+		(at 193.04 194.31 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "950c4662-1423-47e0-870b-5aa65bc3dd71")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 193.04 208.7252 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
 			)
 		)
 	)

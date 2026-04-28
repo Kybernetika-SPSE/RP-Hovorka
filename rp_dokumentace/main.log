@@ -3,13 +3,13 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Vita/Desktop/programovani/RP-Hovorka/rp_dokumentace/main.tex
-(c:/Users/Vita/Desktop/programovani/RP-Hovorka/rp_dokumentace/main.tex
+**c:/Users/Vitek/Desktop/Programovani/RP-Hovorka/rp_dokumentace/main.tex
+(c:/Users/Vitek/Desktop/Programovani/RP-Hovorka/rp_dokumentace/main.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-03-20>
-(D:\miktex\tex/latex/base\report.cls
+L3 programming layer <2025-12-24>
+(C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(D:\miktex\tex/latex/base\size12.clo
+(C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -23,68 +23,68 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \c@table=\count283
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen150
-) (D:\miktex\tex/generic/babel\babel.sty
-Package: babel 2026/03/24 v26.5 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\bibindent=\dimen148
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count284
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
-\U@D=\dimen151
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+\U@D=\dimen149
 \l@unhyphenated=\language79
- (D:\miktex\tex/generic/babel\txtbabel.def)
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count285
 Package babel Info: Configuration files are deprecated, as
 (babel)             they can break document portability.
-(babel)             Reported on input line 4206.
+(babel)             Reported on input line 4196.
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(D:\miktex\tex/latex/arabi\bblopts.cfg
+(C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (D:\miktex\tex/generic/babel/locale/cs\babel-czech.tex)
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/cs\babel-czech.tex)
 Package babel Info: Importing font and identification data for czech
-(babel)             from babel-cs.ini. Reported on input line 4330.
- (D:\miktex\tex/latex/babel-czech\czech.ldf
+(babel)             from babel-cs.ini. Reported on input line 4320.
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/babel-czech\czech.ldf
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
 Package babel Info: Making " an active character on input line 172.
 \cs@wordlen=\count286
 Package babel Info: Making - an active character on input line 226.
-)) (D:\miktex\tex/latex/base\inputenc.sty
+)) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (D:\miktex\tex/latex/graphics\graphicx.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (D:\miktex\tex/latex/graphics\keyval.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) (D:\miktex\tex/latex/graphics\graphics.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (D:\miktex\tex/latex/graphics\trig.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (D:\miktex\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (D:\miktex\tex/latex/graphics-def\pdftex.def
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen152
-\Gin@req@width=\dimen153
-) (D:\miktex\tex/latex/xcolor\xcolor.sty
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (D:\miktex\tex/latex/graphics-cfg\color.cfg
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (D:\miktex\tex/latex/graphics\mathcolor.ltx)
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -94,21 +94,21 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (D:\miktex\tex/latex/amsmath\amsmath.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(D:\miktex\tex/latex/amsmath\amstext.sty
+(C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (D:\miktex\tex/latex/amsmath\amsgen.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen154
-)) (D:\miktex\tex/latex/amsmath\amsbsy.sty
+\ex@=\dimen152
+)) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen155
-) (D:\miktex\tex/latex/amsmath\amsopn.sty
+\pmbraise@=\dimen153
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count287
@@ -128,7 +128,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen156
+\big@size=\dimen154
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count292
@@ -146,46 +146,46 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \column@=\count297
 \maxfields@=\count298
 \andhelp@=\toks22
-\eqnshift@=\dimen157
-\alignsep@=\dimen158
-\tagshift@=\dimen159
-\tagwidth@=\dimen160
-\totwidth@=\dimen161
-\lineht@=\dimen162
+\eqnshift@=\dimen155
+\alignsep@=\dimen156
+\tagshift@=\dimen157
+\tagwidth@=\dimen158
+\totwidth@=\dimen159
+\lineht@=\dimen160
 \@envbody=\toks23
 \multlinegap=\skip52
 \multlinetaggap=\skip53
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (D:\miktex\tex/latex/pdfpages\pdfpages.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
- (D:\miktex\tex/latex/base\ifthen.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (D:\miktex\tex/latex/tools\calc.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count299
 \calc@Bcount=\count300
-\calc@Adimen=\dimen163
-\calc@Bdimen=\dimen164
+\calc@Adimen=\dimen161
+\calc@Bdimen=\dimen162
 \calc@Askip=\skip54
 \calc@Bskip=\skip55
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count301
 \calc@Cskip=\skip56
-) (D:\miktex\tex/latex/eso-pic\eso-pic.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
-\ESO@tempdima=\dimen165
-\ESO@tempdimb=\dimen166
-) (D:\miktex\tex/latex/etoolbox\etoolbox.sty
+\ESO@tempdima=\dimen163
+\ESO@tempdimb=\dimen164
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count302
 )
-\AM@pagewidth=\dimen167
-\AM@pageheight=\dimen168
-\AM@fboxrule=\dimen169
- (D:\miktex\tex/latex/pdfpages\pppdftex.def
+\AM@pagewidth=\dimen165
+\AM@pageheight=\dimen166
+\AM@fboxrule=\dimen167
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count303
@@ -196,14 +196,14 @@ File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks27
 \c@AM@survey=\count305
 \AM@templatesizebox=\box56
-) (D:\miktex\tex/latex/tools\longtable.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip57
 \LTright=\skip58
 \LTpre=\skip59
 \LTpost=\skip60
 \LTchunksize=\count306
-\LTcapwidth=\dimen170
+\LTcapwidth=\dimen168
 \LT@head=\box57
 \LT@firsthead=\box58
 \LT@foot=\box59
@@ -214,38 +214,38 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@tables=\count309
 \c@LT@chunks=\count310
 \LT@p@ftn=\toks28
-) (D:\miktex\tex/latex/tools\array.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen171
+\col@sep=\dimen169
 \ar@mcellbox=\box62
-\extrarowheight=\dimen172
+\extrarowheight=\dimen170
 \NC@list=\toks29
 \extratabsurround=\skip61
 \backup@length=\skip62
 \ar@cellbox=\box63
-) (D:\miktex\tex/latex/listings\listings.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count311
 \lst@gtempboxa=\box64
 \lst@token=\toks30
 \lst@length=\count312
-\lst@currlwidth=\dimen173
+\lst@currlwidth=\dimen171
 \lst@column=\count313
 \lst@pos=\count314
-\lst@lostspace=\dimen174
-\lst@width=\dimen175
+\lst@lostspace=\dimen172
+\lst@width=\dimen173
 \lst@newlines=\count315
 \lst@lineno=\count316
-\lst@maxwidth=\dimen176
- (D:\miktex\tex/latex/listings\lstpatch.sty
+\lst@maxwidth=\dimen174
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
-) (D:\miktex\tex/latex/listings\lstmisc.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\lst@fmtcurrindent=\dimen177
+\lst@fmtcurrindent=\dimen175
 \lst@newlinesensured=\count317
 \c@lstnumber=\count318
 \lst@skipnumbers=\count319
 \lst@framebox=\box65
-) (D:\miktex\tex/latex/listings\listings.cfg
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
@@ -256,30 +256,30 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
     but found:
         2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
-(D:\miktex\tex/latex/anysize\anysize.sty
+(C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/anysize\anysize.sty
 Package: anysize 1994/08/13 setting margin sizes
 
 document style option `anysize' loaded
 Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
 Version 1.0, Aug 13, 1994
-\@Leftmargin=\dimen178
-\@Rightmargin=\dimen179
-\@Topmargin=\dimen180
-\@Bottommargin=\dimen181
-) (D:\miktex\tex/latex/titlesec\titlesec.sty
+\@Leftmargin=\dimen176
+\@Rightmargin=\dimen177
+\@Topmargin=\dimen178
+\@Bottommargin=\dimen179
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box66
 \beforetitleunit=\skip63
 \aftertitleunit=\skip64
-\ttl@plus=\dimen182
-\ttl@minus=\dimen183
+\ttl@plus=\dimen180
+\ttl@minus=\dimen181
 \ttl@toksa=\toks31
-\titlewidth=\dimen184
-\titlewidthlast=\dimen185
-\titlewidthfirst=\dimen186
-) (D:\miktex\tex/latex/setspace\setspace.sty
+\titlewidth=\dimen182
+\titlewidthlast=\dimen183
+\titlewidthfirst=\dimen184
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (D:\miktex\tex/latex/fancyhdr\fancyhdr.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip65
 \f@nch@offset@elh=\skip66
@@ -296,107 +296,107 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip77
 \f@nch@widthR=\skip78
 \@temptokenb=\toks32
-) (D:\miktex\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
- (D:\miktex\tex/generic/iftex\iftex.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (D:\miktex\tex/latex/kvsetkeys\kvsetkeys.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (D:\miktex\tex/generic/kvdefinekeys\kvdefinekeys.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (D:\miktex\tex/generic/pdfescape\pdfescape.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (D:\miktex\tex/generic/ltxcmds\ltxcmds.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (D:\miktex\tex/generic/pdftexcmds\pdftexcmds.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (D:\miktex\tex/generic/infwarerr\infwarerr.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (D:\miktex\tex/latex/hycolor\hycolor.sty
+)) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (D:\miktex\tex/latex/hyperref\nameref.sty
-Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
- (D:\miktex\tex/latex/refcount\refcount.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (D:\miktex\tex/generic/gettitlestring\gettitlestring.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (D:\miktex\tex/latex/kvoptions\kvoptions.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count320
-) (D:\miktex\tex/generic/stringenc\stringenc.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen187
+\@linkdim=\dimen185
 \Hy@linkcounter=\count321
 \Hy@pagecounter=\count322
- (D:\miktex\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (D:\miktex\tex/generic/intcalc\intcalc.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count323
- (D:\miktex\tex/latex/hyperref\puenc.def
-File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 4072.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 4072.
-Package hyperref Info: Hyper figures OFF on input line 4201.
-Package hyperref Info: Link nesting OFF on input line 4206.
-Package hyperref Info: Hyper index ON on input line 4209.
-Package hyperref Info: Plain pages OFF on input line 4216.
-Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4066.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 4066.
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4468.
+Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count324
- (D:\miktex\tex/latex/url\url.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4807.
-\XeTeXLinkMargin=\dimen188
- (D:\miktex\tex/generic/bitset\bitset.sty
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen186
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (D:\miktex\tex/generic/bigintcalc\bigintcalc.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count325
-\Field@Width=\dimen189
-\Fld@charsize=\dimen190
-Package hyperref Info: Hyper figures OFF on input line 6084.
-Package hyperref Info: Link nesting OFF on input line 6089.
-Package hyperref Info: Hyper index ON on input line 6092.
-Package hyperref Info: backreferencing OFF on input line 6099.
-Package hyperref Info: Link coloring OFF on input line 6104.
-Package hyperref Info: Link coloring with OCG OFF on input line 6109.
-Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
 \Hy@abspage=\count326
 \c@Item=\count327
 \c@Hfootnote=\count328
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (D:\miktex\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count329
 \c@bookmark@seq@number=\count330
- (D:\miktex\tex/latex/rerunfilecheck\rerunfilecheck.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (D:\miktex\tex/generic/uniquecounter\uniquecounter.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip79
-) (D:\miktex\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count331
 ) (main.aux
 Package babel Info: 'czech' activates 'czech' shorthands.
@@ -422,29 +422,29 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
- (D:\miktex\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count332
-\scratchdimen=\dimen191
+\scratchdimen=\dimen189
 \scratchbox=\box67
 \nofMPsegments=\count333
 \nofMParguments=\count334
 \everyMPshowfont=\toks33
 \MPscratchCnt=\count335
-\MPscratchDim=\dimen192
+\MPscratchDim=\dimen190
 \MPnumerator=\count336
 \makeMPintoPDFobject=\count337
 \everyMPtoPDFconversion=\toks34
-) (D:\miktex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (D:\miktex\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (D:\miktex\tex/latex/pdflscape\pdflscape.sty
+)) (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (D:\miktex\tex/latex/pdflscape\pdflscape-nometadata.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
 Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (D:\miktex\tex/latex/graphics\lscape.sty
+ (C:\Users\Vitek\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
