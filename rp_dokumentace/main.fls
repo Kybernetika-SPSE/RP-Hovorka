@@ -208,6 +208,10 @@ INPUT .\pdf\Zadani-Hovorka.pdf
 INPUT .\pdf\Zadani-Hovorka.pdf
 INPUT D:\miktex\fonts\tfm\public\cm\cmss12.tfm
 INPUT D:\miktex\fonts\tfm\public\cm\cmssbx10.tfm
+<<<<<<< HEAD
+INPUT D:\miktex\fonts\tfm\public\cm\cmtt12.tfm
+=======
+>>>>>>> 297b29e8c03903d18e3af70ccc28b1dcf1c5cd97
 INPUT .\main.toc
 INPUT .\main.toc
 INPUT main.toc
@@ -260,6 +264,16 @@ INPUT .\pictures\i2c_bootstrappy_.png
 INPUT .\pictures\i2c_bootstrappy_.png
 INPUT .\pictures\i2c_bootstrappy_.png
 INPUT .\pictures\i2c_bootstrappy_.png
+<<<<<<< HEAD
+INPUT .\pictures\xtal.png
+INPUT .\pictures\xtal.png
+INPUT .\pictures\xtal.png
+INPUT .\pictures\xtal.png
+INPUT .\pictures\xtal.png
+INPUT .\pictures\xtal.png
+INPUT .\pictures\xtal.png
+=======
+>>>>>>> 297b29e8c03903d18e3af70ccc28b1dcf1c5cd97
 INPUT .\pictures\3V3cascade.png
 INPUT .\pictures\3V3cascade.png
 INPUT .\pictures\3V3cascade.png
@@ -323,6 +337,22 @@ INPUT .\pictures\sdkarta.png
 INPUT .\pictures\sdkarta.png
 INPUT .\pictures\sdkarta.png
 INPUT .\pictures\sdkarta.png
+<<<<<<< HEAD
+INPUT .\pictures\tlacitka_550D.png
+INPUT .\pictures\tlacitka_550D.png
+INPUT .\pictures\tlacitka_550D.png
+INPUT .\pictures\tlacitka_550D.png
+INPUT .\pictures\tlacitka_550D.png
+INPUT .\pictures\tlacitka_550D.png
+INPUT .\pictures\tlacitka_550D.png
+INPUT .\pictures\spoust.png
+INPUT .\pictures\spoust.png
+INPUT .\pictures\spoust.png
+INPUT .\pictures\spoust.png
+INPUT .\pictures\spoust.png
+INPUT .\pictures\spoust.png
+INPUT .\pictures\spoust.png
+=======
 INPUT .\pictures\xtal.png
 INPUT .\pictures\xtal.png
 INPUT .\pictures\xtal.png
@@ -330,6 +360,7 @@ INPUT .\pictures\xtal.png
 INPUT .\pictures\xtal.png
 INPUT .\pictures\xtal.png
 INPUT .\pictures\xtal.png
+>>>>>>> 297b29e8c03903d18e3af70ccc28b1dcf1c5cd97
 INPUT .\pictures\prevodniklogurovni.png
 INPUT .\pictures\prevodniklogurovni.png
 INPUT .\pictures\prevodniklogurovni.png
@@ -344,7 +375,10 @@ INPUT .\pictures\usb-c.png
 INPUT .\pictures\usb-c.png
 INPUT .\pictures\usb-c.png
 INPUT .\pictures\usb-c.png
+<<<<<<< HEAD
+=======
 INPUT D:\miktex\fonts\tfm\public\cm\cmtt12.tfm
+>>>>>>> 297b29e8c03903d18e3af70ccc28b1dcf1c5cd97
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
