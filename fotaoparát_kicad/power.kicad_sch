@@ -2905,6 +2905,16 @@
 		)
 		(uuid "0234650b-f8ff-4851-8dcb-1fcadc23272d")
 	)
+	(text "LENS LOGIC POWER"
+		(exclude_from_sim no)
+		(at 68.58 149.86 0)
+		(effects
+			(font
+				(size 5 5)
+			)
+		)
+		(uuid "23b155d4-3b24-4931-b404-bb2f59269d5a")
+	)
 	(text "FLASH/PSRAM IO POWER PINS"
 		(exclude_from_sim no)
 		(at 144.272 192.786 0)
@@ -3004,6 +3014,16 @@
 			)
 		)
 		(uuid "f312cc1f-7b6a-4ff6-add7-c851acc6e5b7")
+	)
+	(text "LENS MAIN POWER"
+		(exclude_from_sim no)
+		(at 185.42 149.86 0)
+		(effects
+			(font
+				(size 5 5)
+			)
+		)
+		(uuid "fd32271d-f685-4a31-aa29-fe44638b46b5")
 	)
 	(junction
 		(at 151.13 119.38)
