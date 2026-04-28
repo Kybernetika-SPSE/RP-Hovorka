@@ -1,7 +1,3 @@
-# KiCad cache directories
-.history/
-.history_trim/
-
 # LaTeX artifacts
 *.aux
 *.bbl
@@ -20,7 +16,4 @@
 *.toc
 *.vrb
 *.xdv
-rp_dokumentace/main.pdf
-
-# Backup files
-*-backups/
+main.pdf
