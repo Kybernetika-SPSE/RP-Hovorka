@@ -1,5 +1,9 @@
 # Fdb version 4
+<<<<<<< HEAD
 ["pdflatex"] 1777412580.48207 "c:/Users/Vita/Desktop/programovani/RP-Hovorka/rp_dokumentace/main.tex" "main.pdf" "main" 1777412584.40852 0
+=======
+["pdflatex"] 1777391813.48321 "c:/Users/Vita/Desktop/programovani/RP-Hovorka/rp_dokumentace/main.tex" "main.pdf" "main" 1777391817.14549 0
+>>>>>>> 297b29e8c03903d18e3af70ccc28b1dcf1c5cd97
   "C:/Users/Vita/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1777310539 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Vita/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1777311354 14064 a51b05b076a532609e146b39da275a32 ""
   "C:/Users/Vita/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1777311217 13333475 e017756a6851faf71048fca55ebcdf9c ""
@@ -105,11 +109,19 @@
   "D:/miktex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/miktex/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "Logo.png" 1777302348 7776 4d4a006e11e055680c89247a4d10c3dc ""
+<<<<<<< HEAD
   "c:/Users/Vita/Desktop/programovani/RP-Hovorka/rp_dokumentace/main.tex" 1777412581 38124 361ddd996cc96f54e32b65ffd201022e ""
   "main.aux" 1777412584 11460 ed01fd0d2907c208003dfcf4e33d36d6 "pdflatex"
   "main.out" 1777412584 5762 2bde18b34092a303ba49b5f84496daaf "pdflatex"
   "main.tex" 1777412581 38124 361ddd996cc96f54e32b65ffd201022e ""
   "main.toc" 1777412584 2824 626b913e81be34d98156badb43e994db "pdflatex"
+=======
+  "c:/Users/Vita/Desktop/programovani/RP-Hovorka/rp_dokumentace/main.tex" 1777391805 36050 feeff480e41b75e402308722427bb1e2 ""
+  "main.aux" 1777391816 10283 08e52911f0df9f52524ec88b27408bfc "pdflatex"
+  "main.out" 1777391816 5102 0d9c7db0f71a4b8741a800e5dda6a86d "pdflatex"
+  "main.tex" 1777391805 36050 feeff480e41b75e402308722427bb1e2 ""
+  "main.toc" 1777391816 2493 d12f5f394834d3c4953f4ae5361f4489 "pdflatex"
+>>>>>>> 297b29e8c03903d18e3af70ccc28b1dcf1c5cd97
   "pdf/Zadani-Hovorka.pdf" 1777302348 179957 15814589ee223d7a0d3e5836451298ab ""
   "pictures/3V3cascade.png" 1777319387 18072 fd9af2c677e8e1a0e2b1aa064bbdf454 ""
   "pictures/display.png" 1777391085 17133 cf62e03029858b1ed179d4f3a40c0b69 ""
@@ -118,7 +130,11 @@
   "pictures/flash.png" 1777322257 26567 82f432cf0a19d84d29d78139cc38b406 ""
   "pictures/flashpcb.png" 1777322492 31275 837b0016c42f7998bed5c2de05f367a4 ""
   "pictures/hpbuck.png" 1777323501 10518 00b1b22bd471c989a45a55ed2aefbce8 ""
+<<<<<<< HEAD
   "pictures/i2c_bootstrappy_.png" 1777407758 27961 a74368801b34f5e10090798d080e21bd ""
+=======
+  "pictures/i2c_bootstrappy_.png" 1777391085 52119 63c26af67a885b2eb2bd7bba5b515839 ""
+>>>>>>> 297b29e8c03903d18e3af70ccc28b1dcf1c5cd97
   "pictures/kamera.png" 1777391085 17560 4d70fb479c60cd1d477bb3f8f8d05cb0 ""
   "pictures/lenslogicpower.png" 1777319422 17158 ea874a0c1c4b6d3c935da411ead09a67 ""
   "pictures/lensmainpower.png" 1777320539 17498 02fbdf3c7741f2090811ac09ba7c2fa7 ""
@@ -126,8 +142,11 @@
   "pictures/pcbeditor.png" 1777302356 511571 4b9336b5b0e935f0871815b6341c2de8 ""
   "pictures/prevodniklogurovni.png" 1777391085 20599 65a4e9afd5328646b9f2c261b2ff0244 ""
   "pictures/sdkarta.png" 1777391085 20418 7858d025f79f84cbeead47e58f7e5b77 ""
+<<<<<<< HEAD
   "pictures/spoust.png" 1777409843 7186 8e96623d2e879bda1f5829455cc7e90f ""
   "pictures/tlacitka_550D.png" 1777409724 23753 268e8a15b1923ffba385da58cd08be7a ""
+=======
+>>>>>>> 297b29e8c03903d18e3af70ccc28b1dcf1c5cd97
   "pictures/usb-c.png" 1777391085 25537 c26066e7a346db1a2ccc03bb88ea65ad ""
   "pictures/vsko.png" 1777302358 220000 46bd0d6589288d88c0ed27d5dc05cf94 ""
   "pictures/xtal.png" 1777391085 15993 6a8c72c78e10c7e022d6446a2ff74cba ""
