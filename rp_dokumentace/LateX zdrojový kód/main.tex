@@ -120,7 +120,7 @@
 \chapter*{Anotace} \indent
 \thispagestyle{empty}
 
-Cílem této ročníkové práce je vytvořit systém pro obsluhu mikrokontrolérové kamery, za pomoci mikrokontroléru \texttt{ESP32-P4}. Tím se rozumí od výběru součástek a návrhu PCB až po naprogramování vlastního operačního softwaru. 
+Tato ročníková práce se zabývá návrhem a prototypovou realizací řídicího systému pro mikrokontrolérovou kameru založenou na platformě \texttt{ESP32-P4}. Práce pokrývá výběr a návrh součástek, konstrukci a rozvržení desky plošných spojů, návrh napájecích větví a rozhraní pro kameru, displej a objektiv, a implementaci základního firmware pro pořizování, zpracování a ukládání snímků. Pozornost je věnována navrhování vysokorychlostních rozhraní (QSPI, MIPI/CSI), integritě signálu a spolehlivému napájení včetně řízení objektivu Canon EF. Výstupem je dokumentovaný návrh desky, zapojení a ukázkový firmware umožňující základní oživení a testování hardwaru.
 \vfill
 
 Prohlašuji, že jsem tuto práci vypracoval samostatně a použil literárních pramenů a~\mbox{informací}, které cituji a uvádím v seznamu použité literatury a zdrojů informací.
@@ -275,6 +275,12 @@ Označení DTR (Double Transfer Rate) znamená, že data jsou přenášena na ob
 Paměť je organizována do sektorů, což umožňuje efektivní mazání a zápis po blocích. Zároveň podporuje mechanismy ochrany vybraných oblastí proti zápisu, což je výhodné například pro zabezpečení kritických částí firmwaru.
 \section{Kamerový modul}
 Další klíčovou komponentou je kamerový modul Arducam \texttt{IMX219} s rozlišením 8 Mpx. Tento modul byl zvolen nejen s ohledem na příznivý poměr ceny a výkonu, ale také díky své kompatibilitě a vhodnosti pro použití s mikrokontrolérem \texttt{ESP32-P4}.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{pictures/CAM164_1.jpg}
+    \caption{Vybraný kamerový modul Arducam IMX219 \textit{[Zdroj: rpishop.cz]}}
+    \label{fig:arducam}
+\end{figure}
 
 Zde je klíčové rozhraní DSI/CSI, které umožňuje vysokorychlostní přenos obrazových dat mezi kamerovým modulem, případně displejem, a samotným mikrokontrolérem. Využití tohoto rozhraní je zásadní zejména kvůli vyšším přenosovým rychlostem. Pokud bychom zvolili jiný postup, vyžadovalo by to desítky GPIO pinů, které prostě na MCU nemáme, a navíc by to bylo velmi náročné na synchronizaci a zpracování dat.
 
@@ -284,6 +290,12 @@ Výhodou modulu Arducam je také jeho široká podpora a dostupná dokumentace, 
 
 \section{Display}
 Pro zobrazovací jednotku jsem zvolil 2,8"~LCD modul od společnosti Waveshare, a to především díky jeho DSI rozhraní, které je podporováno mikrokontrolérem ESP32-P4. Toto rozhraní umožňuje efektivní a rychlou komunikaci mezi řídicí jednotkou a displejem.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{pictures/waveshare.jpg}
+    \caption{Vybraný 2,8"~LCD modul od společnosti Waveshare \textit{[Zdroj: rpishop.cz]}}
+    \label{fig:waveshare}
+\end{figure}
 
 Dalším důvodem výběru tohoto konkrétního displeje byla jeho kompatibilita s mechanickou konstrukcí zařízení. Pro zjednodušení návrhu jsem se rozhodl využít tělo a vybrané periferie fotoaparátu Canon 550D. Pro účely této kapitoly postačí uvést, že původní displej z modelu 550D není vhodné použít, jelikož k němu není veřejně dostupná dostatečná technická dokumentace. Zároveň má však velmi podobné rozměry jako zvolený Waveshare modul, což usnadňuje jeho náhradu bez nutnosti zásadních mechanických úprav.
 
@@ -441,14 +453,13 @@ Pro ukládání snímků je osazen konektor pro MicroSD kartu\cite{local_kicad}.
     \caption{Zapojení slotu pro SD kartu v eschématu. \textit{[Zdroj: Vlastní]}}
 \end{figure}
 \subsection{Konektory pro tlačítka ovládání}
+Pro připojení ovládacích tlačítek jsou navrženy dva konektory, které umožňují připojení jak hlavního ovládacího rozhraní (pro nastavení parametrů a navigaci v menu), tak i samostatného tlačítka spouště. Ovládací tlačítka, a k tomu indikační červená led dioda, jsou připojena k GPIO 42--52. Celá tato deska byla recyklována z rozbraného modelového fotoaparátu Canon 550D. Tlačíko spouště je stejného původu, ale je připojeno samostatně kvůli své specifické funkci a umístění v konstrukci zařízení. Kvůli komplikovanému zapojení na původní desce 550D je nutné připojit tlačítko spouště samostatně na plošném spoji vlastní výroby, proto je na návrhu osazen samostatný konektor pro tento účel.
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{pictures/tlacitka_550D.png}
     \includegraphics[width=0.5\linewidth]{pictures/spoust.png}
     \caption{Zapojení konektorů pro připojení ovládacích tlačítek v eschématu. Nahoře hlavní olvádací rozhraní, dole tlačítka spouště Fotaoparátu. \textit{[Zdroj: Vlastní]}}
 \end{figure}
-
-Pro připojení ovládacích tlačítek jsou navrženy dva konektory, které umožňují připojení jak hlavního ovládacího rozhraní (pro nastavení parametrů a navigaci v menu), tak i samostatného tlačítka spouště. Ovládací tlačítka, a k tomu indikační červená led dioda, jsou připojena k GPIO 42--52. Celá tato deska byla recyklována z rozbraného modelového fotoaparátu Canon 550D. Tlačíko spouště je stejného původu, ale je připojeno samostatně kvůli své specifické funkci a umístění v konstrukci zařízení. Kvůli komplikovanému zapojení na původní desce 550D je nutné připojit tlačítko spouště samostatně na plošném spoji vlastní výroby, proto je na návrhu osazen samostatný konektor pro tento účel.
 
 \section{Převodník logických úrovní pro komunikaci s objektivem}
 Pro komunikaci s objektivem Canon EF je osazen obousměrný převodník logických úrovní \texttt{TXS0108EPW}\cite{txs0108e,canon_ef_notes}. Důvodem je rozdíl mezi logikou mikrokontroléru a úrovněmi na straně objektivu.
@@ -473,7 +484,7 @@ V kombinaci s nativní podporou USB v ESP32-P4 toto řešení výrazně zjednodu
     \caption{Zapojení USB-C konektoru v eschématu. \textit{[Zdroj: Vlastní]}}
 \end{figure}
 
-\chapter{Plánvané oživení a konstrukce}
+\chapter{Plánované oživení a konstrukce}
 
 % Poznámka o stavu
 Praktické oživení hardwaru a dokončení mechanické konstrukce nebyly dokončeny do termínu uzávěrky, neboť jsem přecenil své síly a podcenil časový limit. Následující části proto popisují plánované kroky a doporučený postup pro systematické oživení a dokončení návrhu mechaniky.
@@ -491,13 +502,27 @@ Do ověřovacích metrik softwarového oživení patří především úspěšn�
 \section{Plánovaná konstrukce}
 Z důvodu komplexity mechanické konstrukce bajonetu, který bych sám nemohl udělat pro bezpečné uchycení objektivu, jsem se rozhodl využít tělo a vybrané periferie z modelu Canon 550D. Toto řešeení jsem si vybral jako spíše dočasné, jelikož by umožnilo rychlejší vývoj a oživení. V budoucnu bych rád navrhl vlastní mechanickou konstrukci, jelikož je potřeba brát v úvahu i tzv. flange, neboli vzdálenost mezi bajonetem a snímačem, která je u Canon EF 44 mm. Proto mám v plánu vytořit vlastní tělo Fotaoparátu, s vnořeným bajonetem EF.
 
-\chapter{Závěr}
-Bohužel jsem neodhadl dobu pro pečlivé kontrování, a lehce přecenil své schopnosti z hlediska elektrotechniky. To způsobilo to, že jsem se nedostal do fáze oživení a testování, což je pro mě velkou škodou.
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{pictures/IMG_0312.JPG}
+    \caption{Části rozebraného těla fotoaparátu Canon 550D vybrané ke konstrukci. \textit{[Zdroj: Vlastní]}}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{pictures/img_0313.JPG}
+    \caption{Bajonet z modelu Canon 550D, který bude použit pro uchycení objektivu. \textit{[Zdroj: Vlastní]}}
+\end{figure}
 
-Práce v KiCADu není zcela skončená, návrh plošného spoje se stal zmatečným kvůli častému předělávání nákreu, když jsem našel chybu v zapojení, které v mé hlavě bylo velmi jednoduché. Živoucím příkladem je zapojení měničů napětí, protože jsem se snažil navrhnout co nejjednodušší řešení, abych posléze zjstil že v datasheetu je ukázka zapojení, kde byly i další součástky pro stabilizaci a odrušení, což vedlo k tomu, že jsem musel předělat celý návrh napájecí části.
-Schéma je na tom lépe, hlavně kvůli ochotě pana učitele Švihly, který se mi ve svém limitovaném čase snažil pomáhat.
+\chapter*{Závěr}
+  Systém pro mikrokontrolérový fotoaparát založený na \texttt{ESP32-P4} jsem bohužel nestihl dokončit. Dokončený úsek práce tvoří detailní návrh schémat, volba klíčových komponent (externí QSPI flash, kamerový modul, DSI displej, napájecí měniče), návrh konektorů a pomocných obvodů (USB‑C, SD, převodník napěťových úrovní) a příprava počátečního firmwaru pro bring‑up.
 
-Mám v plánu pokračovat v práci i přístí rok a dokočit co jsem začal.
+    Co se podařilo: většina schémat a návrhů byla dokončena a zdokumentována včetně poznámek k routování kritických QSPI/CSI/DSI cest. Byl připraven plán oživení s krokovým postupem pro ověření bootu, QSPI, SD, displeje a kamery. Také jsem identifikoval klíčová rizika a navrhl opatření (vyrovnání délek, přídavná filtrace, ochrana proti ESD), která je třeba ověřit při bring‑upu.
+
+    Co zůstalo nedokončeno: finální DRC a doladění napájecích filtrací a odrušení, kompletní mechanická integrace a sériové funkční testování na prototypu. Tyto nedostatky pramenily hlavně z nutnosti opakovaných úprav schématu a z časové náročnosti ladění HF signálů.
+
+    Další postup: nejprve dokončit DRC a optimalizovat routování kritických signálů (vyrovnání délek, kontrola impedance, případné stínění), poté provést zátěžové testy napájení a doladit filtry. Následně postupný bring‑up: ověření bootloaderu a QSPI, integrace SD a souborového systému, inicializace displeje a nakonec integrace kamery s ukládáním snímků. Pro mechanické ověření doporučuji dočasné použití těla Canon 550D, které urychlí ladění, a po ověření navrhnout finální konstrukci.
+
+    Výstupem této fáze jsou jasné, zdokumentované kroky a opatření, která umožní systematické dokončení oživení. Získané zkušenosti s návrhem HF rozhraní, řízením napájení a integrací periferií poskytují pevný základ pro další vývoj firmwaru, přidání uživatelského rozhraní a zavedení spolehlivého aktualizačního mechanismu.
 % CIATCE ---------------------------------------------------------------------------
 \begin{thebibliography}{99}
 \addcontentsline{toc}{chapter}{Literatura}
@@ -546,6 +571,7 @@ Mám v plánu pokračovat v práci i přístí rok a dokočit co jsem začal.
 \chapter*{Přílohy}
 \pagenumbering{Roman}
 \addcontentsline{toc}{chapter}{Přílohy}
+
 
 
 
