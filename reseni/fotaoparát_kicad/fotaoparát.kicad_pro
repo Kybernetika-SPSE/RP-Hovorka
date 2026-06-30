@@ -267,8 +267,8 @@
       ],
       "track_widths": [
         0.0,
-        0.2,
-        0.6
+        0.254,
+        0.635
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -300,6 +300,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.25
         }
       ],
       "zones_allow_external_fillets": false
@@ -808,12 +812,18 @@
           "group_by": false,
           "label": "LCSC Part",
           "name": "LCSC Part",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Pole4",
+          "name": "Pole4",
           "show": false
         }
       ],
@@ -822,7 +832,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "bus_aliases": {
       "Cam": [
@@ -877,7 +887,7 @@
         "uuid": "0ab33720-0b6a-449c-80c0-2b7abe4d9450"
       }
     ],
-    "used_designators": "",
+    "used_designators": "CAM_IN1,C1-65,D1-5,#PWR1-107,BAT_IO1,DISPLAY_IN1,CONV1-3,R1-28,ESD_PROT1,ESP32_P1,ESP_FLASH1,J1-6,L1-4,LOGIC_CONVERT1,SW1-2,U1,USB\\-C_2.1,Y1",
     "variants": []
   },
   "sheets": [

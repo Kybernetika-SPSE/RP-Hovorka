@@ -1,0 +1,13 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Espressif") (type "KiCad") (uri "${KIPRJMOD}/espressif-lib/footprints/Espressif.pretty") (options "") (descr ""))
+	(lib (name "Espressif") (type "KiCad") (uri "${KIPRJMOD}/espressif-lib/footprints/Espressif.pretty") (options "") (descr ""))
+	(lib (name "SamacSys") (type "KiCad") (uri "C:/Users/Vita/Documents/KiCad/9.0/3rdparty/SamacSys.pretty") (options "") (descr ""))
+	(lib (name "SamacSys") (type "KiCad") (uri "C:/Users/Vita/Documents/KiCad/9.0/3rdparty/SamacSys.pretty") (options "") (descr ""))
+	(lib (name "SamacSys_Parts") (type "KiCad") (uri "C:/Users/Vita/Documents/KiCad/9.0/3rdparty/footprints/SamacSys/SamacSys_Parts.pretty") (options "") (descr ""))
+	(lib (name "SamacSys_Parts") (type "KiCad") (uri "C:/Users/Vita/Documents/KiCad/9.0/3rdparty/footprints/SamacSys/SamacSys_Parts.pretty") (options "") (descr ""))
+	(lib (name "rnd_shit_co_nema_symboly") (type "KiCad") (uri "${KIPRJMOD}/rnd_shit_co_nema_symboly.pretty") (options "") (descr ""))
+	(lib (name "rnd_shit_co_nema_symboly") (type "KiCad") (uri "${KIPRJMOD}/rnd_shit_co_nema_symboly.pretty") (options "") (descr ""))
+	(lib (name "stlib") (type "KiCad") (uri "${KIPRJMOD}/stlib.pretty") (options "") (descr ""))
+	(lib (name "stlib") (type "KiCad") (uri "${KIPRJMOD}/stlib.pretty") (options "") (descr ""))
+)
